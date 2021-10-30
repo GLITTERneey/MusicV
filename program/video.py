@@ -99,7 +99,7 @@ async def vplay(client, m: Message):
                 pos = add_to_queue(chat_id, songname, dl, link, "Video", Q)
                 await loser.delete()
                 await m.reply_photo(
-                    photo=f"{IMG_1}",
+                    photo=f"https://telegra.ph/file/e3687c2f0d0cdf01a83f5.jpg",
                     caption=f"💡 **𝐓𝐫𝐚𝐜𝐤 𝐀𝐝𝐝𝐞𝐝 𝐓𝐨 𝐓𝐡𝐞 𝐪𝐮𝐞𝐮𝐞**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({link})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲:** {m.from_user.mention()}\n🔢 **𝐒𝐞𝐝𝐚𝐧𝐠 𝐀𝐧𝐭𝐫𝐢 𝐃𝐢 𝐏𝐨𝐬𝐢𝐬𝐢 »** `{pos}`",
                     reply_markup=keyboard,
                 )
@@ -118,7 +118,7 @@ async def vplay(client, m: Message):
                 add_to_queue(chat_id, songname, dl, link, "Video", Q)
                 await loser.delete()
                 await m.reply_photo(
-                    photo=f"{IMG_2}",
+                    photo=f"https://telegra.ph/file/5060c9d08770c31e0acdc.png",
                     caption=f"💡 **𝐯𝐢𝐝𝐞𝐨 𝐬𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠 𝐬𝐭𝐚𝐫𝐭𝐞𝐝.**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({link})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n💡 **𝐒𝐭𝐚𝐭𝐮𝐬:** `Playing`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲:** {m.from_user.mention()}",
                     reply_markup=keyboard,
                 )
@@ -148,7 +148,7 @@ async def vplay(client, m: Message):
                             )
                             await loser.delete()
                             await m.reply_photo(
-                                photo=f"{IMG_1}",
+                                photo=f"https://telegra.ph/file/e3687c2f0d0cdf01a83f5.jpg",
                                 caption=f"💡 **𝐓𝐫𝐚𝐜𝐤 𝐚𝐝𝐝𝐞𝐝 𝐭𝐨 𝐭𝐡𝐞 𝐪𝐮𝐞𝐮𝐞**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({url})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲:** {m.from_user.mention()}\n🔢 **𝐒𝐞𝐝𝐚𝐧𝐠 𝐀𝐧𝐭𝐫𝐢 𝐃𝐢 𝐏𝐨𝐬𝐢𝐬𝐢 »** `{pos}`",
                                 reply_markup=keyboard,
                             )
@@ -162,7 +162,7 @@ async def vplay(client, m: Message):
                                 add_to_queue(chat_id, songname, ytlink, url, "Video", Q)
                                 await loser.delete()
                                 await m.reply_photo(
-                                    photo=f"{IMG_2}",
+                                    photo=f"https://telegra.ph/file/5060c9d08770c31e0acdc.png",
                                     caption=f"💡 **𝐯𝐢𝐝𝐞𝐨 𝐬𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠 𝐬𝐭𝐚𝐫𝐭𝐞𝐝.**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({url})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n💡 **𝐒𝐭𝐚𝐭𝐮𝐬:** `Playing`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲:** {m.from_user.mention()}",
                                     reply_markup=keyboard,
                                 )
@@ -193,7 +193,7 @@ async def vplay(client, m: Message):
                         pos = add_to_queue(chat_id, songname, ytlink, url, "Video", Q)
                         await loser.delete()
                         await m.reply_photo(
-                            photo=f"{IMG_1}",
+                            photo=f"https://telegra.ph/file/e3687c2f0d0cdf01a83f5.jpg",
                             caption=f"💡 **𝐓𝐫𝐚𝐜𝐤 𝐚𝐝𝐝𝐞𝐝 𝐭𝐨 𝐭𝐡𝐞 𝐪𝐮𝐞𝐮𝐞**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({url})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲:** {m.from_user.mention()}\n🔢 **𝐒𝐞𝐝𝐚𝐧𝐠 𝐀𝐧𝐭𝐫𝐢 𝐃𝐢 𝐏𝐨𝐬𝐢𝐬𝐢 »** `{pos}`",
                             reply_markup=keyboard,
                         )
@@ -207,7 +207,7 @@ async def vplay(client, m: Message):
                             add_to_queue(chat_id, songname, ytlink, url, "Video", Q)
                             await loser.delete()
                             await m.reply_photo(
-                                photo=f"{IMG_2}",
+                                photo=f"https://telegra.ph/file/5060c9d08770c31e0acdc.png",
                                 caption=f"💡 **𝐯𝐢𝐝𝐞𝐨 𝐬𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠 𝐬𝐭𝐚𝐫𝐭𝐞𝐝.**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({url})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n💡 **𝐒𝐭𝐚𝐭𝐮𝐬:** `Playing`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲:** {m.from_user.mention()}",
                                 reply_markup=keyboard,
                             )
@@ -269,7 +269,7 @@ async def vstream(client, m: Message):
                 pos = add_to_queue(chat_id, "Live Stream", livelink, link, "Video", Q)
                 await loser.delete()
                 await m.reply_photo(
-                    photo=f"{IMG_1}",
+                    photo=f"https://telegra.ph/file/e3687c2f0d0cdf01a83f5.jpg",
                     caption=f"💡 **𝐓𝐫𝐚𝐜𝐤 𝐚𝐝𝐝𝐞𝐝 𝐭𝐨 𝐭𝐡𝐞 𝐪𝐮𝐞𝐮𝐞**\n\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲:** {m.from_user.mention()}\n🔢 **𝐒𝐞𝐝𝐚𝐧𝐠 𝐀𝐧𝐭𝐫𝐢 𝐃𝐢 𝐏𝐨𝐬𝐢𝐬𝐢 »** `{pos}`",
                     reply_markup=keyboard,
                 )
@@ -289,7 +289,7 @@ async def vstream(client, m: Message):
                     add_to_queue(chat_id, "Live Stream", livelink, link, "Video", Q)
                     await loser.delete()
                     await m.reply_photo(
-                        photo=f"{IMG_2}",
+                        photo=f"https://telegra.ph/file/5060c9d08770c31e0acdc.png",
                         caption=f"💡 **[𝐋𝐢𝐯𝐞 𝐬𝐭𝐫𝐞𝐚𝐦 𝐯𝐢𝐝𝐞𝐨]({link}) 𝐬𝐭𝐚𝐫𝐭𝐞𝐝.**\n\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n💡 **𝐒𝐭𝐚𝐭𝐮𝐬:** `Playing`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲:** {m.from_user.mention()}",
                         reply_markup=keyboard,
                     )
