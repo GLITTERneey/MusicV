@@ -83,7 +83,7 @@ async def play(_, m: Message):
                 pos = add_to_queue(chat_id, songname, dl, link, "Audio", 0)
                 await suhu.delete()
                 await m.reply_photo(
-                    photo=f"{IMG_1}",
+                    photo=f"https://telegra.ph/file/e3687c2f0d0cdf01a83f5.jpg",
                     caption=f"💡 **𝐓𝐫𝐚𝐜𝐤 𝐚𝐝𝐝𝐞𝐝 𝐭𝐨 𝐭𝐡𝐞 𝐪𝐮𝐞𝐮𝐞**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({link})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲:** {m.from_user.mention()}\n🔢 **𝐀𝐭 𝐩𝐨𝐬𝐢𝐭𝐢𝐨𝐧 »** `{pos}`",
                     reply_markup=keyboard,
                 )
@@ -98,7 +98,7 @@ async def play(_, m: Message):
                 add_to_queue(chat_id, songname, dl, link, "Audio", 0)
                 await suhu.delete()
                 await m.reply_photo(
-                    photo=f"{IMG_2}",
+                    photo=f"https://telegra.ph/file/5060c9d08770c31e0acdc.png",
                     caption=f"💡 **𝐌𝐮𝐬𝐢𝐜 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠 𝐒𝐭𝐚𝐫𝐭𝐞𝐝.**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({link})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n💡 **𝐒𝐭𝐚𝐭𝐮𝐬:** `Playing`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲:** {m.from_user.mention()}",
                     reply_markup=keyboard,
                 )
@@ -126,7 +126,7 @@ async def play(_, m: Message):
                             )
                             await suhu.delete()
                             await m.reply_photo(
-                                photo=f"{IMG_1}",
+                                photo=f"https://telegra.ph/file/e3687c2f0d0cdf01a83f5.jpg",
                                 caption=f"💡 **𝐓𝐫𝐚𝐜𝐤 𝐚𝐝𝐝𝐞𝐝 𝐭𝐨 𝐭𝐡𝐞 𝐪𝐮𝐞𝐮𝐞**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({url})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲:** {m.from_user.mention()}\n🔢 **𝐀𝐭 𝐩𝐨𝐬𝐢𝐭𝐢𝐨𝐧 »** `{pos}`",
                                 reply_markup=keyboard,
                             )
@@ -142,7 +142,7 @@ async def play(_, m: Message):
                                 add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
                                 await suhu.delete()
                                 await m.reply_photo(
-                                    photo=f"{IMG_2}",
+                                    photo=f"https://telegra.ph/file/5060c9d08770c31e0acdc.png",
                                     caption=f"💡 **𝐌𝐮𝐬𝐢𝐜 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠 𝐒𝐭𝐚𝐫𝐭𝐞𝐝.**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({url})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n💡 **𝐒𝐭𝐚𝐭𝐮𝐬:** `Playing`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲:** {m.from_user.mention()}",
                                     reply_markup=keyboard,
                                 )
@@ -171,7 +171,7 @@ async def play(_, m: Message):
                         pos = add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
                         await suhu.delete()
                         await m.reply_photo(
-                            photo=f"{IMG_1}",
+                            photo=f"https://telegra.ph/file/e3687c2f0d0cdf01a83f5.jpg",
                             caption=f"💡 **𝐓𝐫𝐚𝐜𝐤 𝐚𝐝𝐝𝐞𝐝 𝐭𝐨 𝐭𝐡𝐞 𝐪𝐮𝐞𝐮𝐞**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({url})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲:** {m.from_user.mention()}\n🔢 **𝐀𝐭 𝐩𝐨𝐬𝐢𝐭𝐢𝐨𝐧 »** `{pos}`",
                             reply_markup=keyboard,
                         )
@@ -187,7 +187,7 @@ async def play(_, m: Message):
                             add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
                             await suhu.delete()
                             await m.reply_photo(
-                                photo=f"{IMG_2}",
+                                photo=f"https://telegra.ph/file/5060c9d08770c31e0acdc.png",
                                 caption=f"💡 **𝐦𝐮𝐬𝐢𝐜 𝐬𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠 𝐬𝐭𝐚𝐫𝐭𝐞𝐝.**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({url})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n💡 **𝐒𝐭𝐚𝐭𝐮𝐬:** `Playing`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲:** {m.from_user.mention()}",
                                 reply_markup=keyboard,
                             )
@@ -235,7 +235,7 @@ async def stream(_, m: Message):
                 pos = add_to_queue(chat_id, "Radio", livelink, link, "Audio", 0)
                 await suhu.delete()
                 await m.reply_photo(
-                    photo=f"{IMG_1}",
+                    photo=f"https://telegra.ph/file/e3687c2f0d0cdf01a83f5.jpg",
                     caption=f"💡 **𝐓𝐫𝐚𝐜𝐤 𝐚𝐝𝐝𝐞𝐝 𝐭𝐨 𝐭𝐡𝐞 𝐪𝐮𝐞𝐮𝐞**\n\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲:** {m.from_user.mention()}\n🔢 **𝐀𝐭 𝐩𝐨𝐬𝐢𝐭𝐢𝐨𝐧 »** `{pos}`",
                     reply_markup=keyboard,
                 )
@@ -251,7 +251,7 @@ async def stream(_, m: Message):
                     add_to_queue(chat_id, "Radio", livelink, link, "Audio", 0)
                     await suhu.delete()
                     await m.reply_photo(
-                        photo=f"{IMG_2}",
+                        photo=f"https://telegra.ph/file/5060c9d08770c31e0acdc.png",
                         caption=f"💡 **[Radio live]({link}) 𝐬𝐭𝐫𝐞𝐚𝐦 𝐬𝐭𝐚𝐫𝐭𝐞𝐝.**\n\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n💡 **𝐒𝐭𝐚𝐭𝐮𝐬:** `Playing`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲:** {m.from_user.mention()}",
                         reply_markup=keyboard,
                     )
