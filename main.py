@@ -14,5 +14,4 @@ async def mulai_bot():
     await bot.stop()
 
 
-loop = asyncio.get_event_loop()
 loop.run_until_complete(mulai_bot())
