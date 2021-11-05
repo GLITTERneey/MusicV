@@ -19,7 +19,7 @@ async def update_admin(client, message):
         new_admins.append(u.user.id)
     admins[message.chat.id] = new_admins
     await message.reply_text(
-        "✅ 𝐁𝐨𝐭 **𝐑𝐞𝐥𝐨𝐚𝐝 𝐃𝐞𝐧𝐠𝐚𝐧 𝐁𝐞𝐧𝐞𝐫 !**\n✅ **𝐀𝐝𝐦𝐢𝐧 𝐥𝐢𝐬𝐭** 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 **𝐮𝐩𝐝𝐚𝐭𝐞𝐝 !**"
+        "✅ вσт **яєℓσα∂ ∂єηgαη вєηєя !**\n✅ **α∂мιη ℓιѕт** нαѕ вєєη **υρ∂αтє !**"
     )
 
 
@@ -31,10 +31,10 @@ async def skip(client, m: Message):
         [
             [
                 InlineKeyboardButton(
-                    text="✨𝐆𝐫𝐨𝐮𝐩✨", url=f"https://t.me/{GROUP_SUPPORT}"
+                    text="✨gяσυρѕ✨", url=f"https://t.me/{GROUP_SUPPORT}"
                 ),
                 InlineKeyboardButton(
-                    text="🌻𝐂𝐡𝐚𝐧𝐧𝐞𝐥🌻", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    text="🌻¢нαηηєℓ🌻", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]
@@ -44,18 +44,18 @@ async def skip(client, m: Message):
     if len(m.command) < 2:
         op = await skip_current_song(chat_id)
         if op == 0:
-            await m.reply("❌ 𝐓𝐢𝐝𝐚𝐤 𝐀𝐝𝐚 𝐘𝐚𝐧𝐠 𝐒𝐞𝐝𝐚𝐧𝐠 𝐃𝐢𝐩𝐮𝐭𝐚𝐫")
+            await m.reply("❌ тι∂αк α∂α уαηg ѕє∂αηg ∂ιρυтαя")
         elif op == 1:
-            await m.reply("✅ __Queues__ is empty.\n\n• 𝐮𝐬𝐞𝐫𝐛𝐨𝐭 𝐦𝐞𝐧𝐢𝐧𝐠𝐠𝐚𝐥𝐤𝐚𝐧 𝐨𝐛𝐫𝐨𝐥𝐚𝐧 𝐬𝐮𝐚𝐫𝐚")
+            await m.reply("✅ __Queues__ is empty.\n\n• υѕєявσт мєηιηggαℓкαη σвяσℓαη ѕυαяα")
         else:
             await m.reply_photo(
                 photo=f"https://telegra.ph/file/f652fef33e7e39386d31b.jpg",
-                caption=f"⏭ **𝐌𝐞𝐥𝐨𝐦𝐩𝐚𝐭𝐢 𝐤𝐞 𝐥𝐚𝐠𝐮 𝐛𝐞𝐫𝐢𝐤𝐮𝐭𝐧𝐲𝐚.**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{op[0]}]({op[1]})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n💡 **𝐒𝐭𝐚𝐭𝐮𝐬:** `Playing`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲𝐞:** {m.from_user.mention()}",
+                caption=f"⏭ **мєℓσмραтι кє ℓαgυ вєяιкυтηуα.**\n\n🏷 **ηαмє:** [{op[0]}]({op[1]})\n💭 **¢нαт:** `{chat_id}`\n💡 **ѕтαтυѕ:** `Playing`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}",
                 reply_markup=keyboard,
             )
     else:
         skip = m.text.split(None, 1)[1]
-        OP = "🗑 **𝐥𝐚𝐠𝐮 𝐝𝐢𝐡𝐚𝐩𝐮𝐬 𝐝𝐚𝐫𝐢 𝐚𝐧𝐭𝐫𝐢𝐚𝐧:**"
+        OP = "🗑 **ℓαgυ ∂ιнαρυѕ ∂αяι αηтяιαη:**"
         if chat_id in QUEUE:
             items = [int(x) for x in skip.split(" ") if x.isdigit()]
             items.sort(reverse=True)
@@ -82,11 +82,11 @@ async def stop(client, m: Message):
         try:
             await call_py.leave_group_call(chat_id)
             clear_queue(chat_id)
-            await m.reply("✅ **𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠 𝐓𝐞𝐥𝐚𝐡 𝐁𝐞𝐫𝐚𝐤𝐡𝐢𝐫 𝐁𝐲𝐞.**")
+            await m.reply("✅ **ѕтяєαмιηg тєℓαн вєяαкнιя вує.**")
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **𝐓𝐢𝐝𝐚𝐤 𝐀𝐝𝐚 𝐃𝐚𝐥𝐚𝐦 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠**")
+        await m.reply("❌ **тι∂αк α∂α ∂αℓαм ѕтяєαмιηg**")
 
 
 @Client.on_message(
@@ -99,12 +99,12 @@ async def pause(client, m: Message):
         try:
             await call_py.pause_stream(chat_id)
             await m.reply(
-                "⏸ **𝐓𝐫𝐚𝐜𝐤 paused.**\n\n• **𝐔𝐧𝐭𝐮𝐤 𝐌𝐞𝐥𝐚𝐧𝐣𝐮𝐭𝐤𝐚𝐧 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠, 𝐆𝐮𝐧𝐚𝐤𝐚𝐧**\n» /resume 𝐜𝐨𝐦𝐦𝐚𝐧𝐝."
+                "⏸ **тяα¢к paused.**\n\n• **υηтυк мєℓαηʝυткαη ѕтяєαмιηg, gυηαкαη**\n» /resume ¢σммαη∂."
             )
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **𝐓𝐢𝐝𝐚𝐤 𝐀𝐝𝐚 𝐃𝐚𝐥𝐚𝐦 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠**")
+        await m.reply("❌ **тι∂αк α∂α ∂αℓαм ѕтяєαмιηg**")
 
 
 @Client.on_message(
@@ -117,12 +117,12 @@ async def resume(client, m: Message):
         try:
             await call_py.resume_stream(chat_id)
             await m.reply(
-                "▶️ **𝐓𝐫𝐚𝐜𝐤 resumed.**\n\n• **𝐔𝐧𝐭𝐮𝐤 𝐌𝐞𝐧𝐣𝐞𝐝𝐚 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠, 𝐆𝐮𝐧𝐚𝐤𝐚𝐧 𝐓𝐨𝐦𝐛𝐨𝐥**\n» /pause 𝐜𝐨𝐦𝐦𝐚𝐧𝐝."
+                "▶️ **тяα¢к resumed.**\n\n• **υηтυк мєηʝє∂α ѕтяєαмιηg, gυηαкαη тσмвσℓ**\n» /pause ¢σммαη∂."
             )
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **𝐓𝐢𝐝𝐚𝐤 𝐀𝐝𝐚 𝐃𝐚𝐥𝐚𝐦 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠**")
+        await m.reply("❌ **тι∂αк α∂α ∂αℓαм ѕтяєαмιηg**")
 
 
 @Client.on_message(
@@ -134,6 +134,6 @@ async def change_volume(client, m: Message):
     chat_id = m.chat.id
     try:
         await call_py.change_volume_call(chat_id, volume=int(range))
-        await m.reply(f"✅ **𝐕𝐨𝐥𝐮𝐦𝐞 𝐃𝐢𝐬𝐞𝐭𝐞𝐥 𝐊𝐞𝐞** `{range}`%")
+        await m.reply(f"✅ **νσℓυмє ∂ιѕєтєℓ кєє** `{range}`%")
     except Exception as e:
         await m.reply(f"🚫 **error:**\n\n{e}")
