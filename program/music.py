@@ -158,7 +158,7 @@ async def play(_, m: Message):
             suhu = await m.reply("🔎 **ѕєαя¢нιηg...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
-            if search == 0:q
+            if search == 0:
                 await suhu.edit("❌ **тι∂αк α∂α нαѕιℓ уαηg ∂ιтємυкαη.**")
             else:
                 songname = search[0]
