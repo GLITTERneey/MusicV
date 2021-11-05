@@ -49,7 +49,7 @@ async def skip(client, m: Message):
             await m.reply("✅ __Queues__ is empty.\n\n• υѕєявσт мєηιηggαℓкαη σвяσℓαη ѕυαяα")
         else:
             await m.reply_photo(
-                photo=f"https://telegra.ph/file/f652fef33e7e39386d31b.jpg",
+                photo=f"https://telegra.ph/file/85e95989bda69d4919b65.jpg",
                 caption=f"⏭ **мєℓσмραтι кє ℓαgυ вєяιкυтηуα.**\n\n🏷 **ηαмє:** [{op[0]}]({op[1]})\n💭 **¢нαт:** `{chat_id}`\n💡 **ѕтαтυѕ:** `Playing`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}",
                 reply_markup=keyboard,
             )
