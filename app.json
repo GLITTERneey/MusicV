@@ -1,14 +1,14 @@
 {
-    "name": "Video x Music Stream Bot",
+    "name": "Video x Music",
     "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by pytgcalls and pyrogram",
-    "logo": "https://telegra.ph/file/4f190083ac08468af47ee.jpg"
+    "logo": "https://telegra.ph/file/1c41ded2dd871eb36bd7e.png",
     "keywords": [
         "pytgcalls",
         "telegram bot",
         "video stream",
         "pyrogram"
     ],
-    "website": "https://t.me/storeglitter",
+    "website": "https://t.me/levinachannel",
     "repository": "https://github.com/GLITTERneey/MusicV",
     "success_url": "https://t.me/Biarenakliatnyaaa",
     "env": {
