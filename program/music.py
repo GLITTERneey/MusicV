@@ -190,7 +190,7 @@ async def play(_, m: Message):
                                 photo=f"https://telegra.ph/file/ed349acfdc85b6dd88fac.jpg",
                                 caption=f"💡 **music streaming startloss.**\n\n🏷 **ηαмє:** [{songname}]({url})\n💭 **¢нαт:** `{chat_id}`\n💡 **𝐒𝐭𝐚𝐭𝐮𝐬:** `Playing`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲𝐞:** {m.from_user.mention()}",
                                 reply_markup=keyboard,
-                            )@
+                            )
                         except Exception as ep:
                             await m.reply_text(f"🚫 error: `{ep}`")
 
