@@ -56,10 +56,10 @@ async def play(_, m: Message):
         [
             [
                 InlineKeyboardButton(
-                    text="✨𝐆𝐫𝐨𝐮𝐩𝐬✨", url=f"https://t.me/{GROUP_SUPPORT}"
+                    text="✨gяσυρѕ✨", url=f"https://t.me/{GROUP_SUPPORT}"
                 ),
                 InlineKeyboardButton(
-                    text="✨𝐂𝐡𝐚𝐧𝐧𝐞𝐥✨", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    text="✨¢нαηηєℓ✨", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]
@@ -69,7 +69,7 @@ async def play(_, m: Message):
     chat_id = m.chat.id
     if replied:
         if replied.audio or replied.voice:
-            suhu = await replied.reply("📥 **𝐒𝐞𝐝𝐚𝐧𝐠 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐒𝐚𝐛𝐚𝐫 𝐃𝐮𝐥𝐮...**")
+            suhu = await replied.reply("📥 **ѕє∂αηg ∂σωηℓσα∂ ѕαвαя ∂υℓυ...**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -84,7 +84,7 @@ async def play(_, m: Message):
                 await suhu.delete()
                 await m.reply_photo(
                     photo=f"https://telegra.ph/file/ed349acfdc85b6dd88fac.jpg",
-                    caption=f"💡 **𝐌𝐮𝐬𝐢𝐜 𝐃𝐢𝐭𝐚𝐦𝐛𝐚𝐡𝐤𝐚𝐧 𝐊𝐞 𝐀𝐧𝐭𝐫𝐢𝐚𝐧**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({link})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲𝐞:** {m.from_user.mention()}\n🔢 **𝐒𝐞𝐝𝐚𝐧𝐠 𝐀𝐧𝐭𝐫𝐢 𝐃𝐢 𝐏𝐨𝐬𝐢𝐬𝐢 »** `{pos}`",
+                    caption=f"💡 **мυѕι¢ ∂ιтαмвαнкαη кє αηтяιαη**\n\n🏷 **ηαмє:** [{songname}]({link})\n💭 **¢нαт:** `{chat_id}`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}\n🔢 **ѕє∂αηg αηтяι ∂ι ρσѕιѕι »** `{pos}`",
                     reply_markup=keyboard,
                 )
             else:
@@ -99,20 +99,20 @@ async def play(_, m: Message):
                 await suhu.delete()
                 await m.reply_photo(
                     photo=f"https://telegra.ph/file/ed349acfdc85b6dd88fac.jpg",
-                    caption=f"💡 **𝐌𝐮𝐬𝐢𝐜 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠 𝐒𝐭𝐚𝐫𝐭𝐞𝐝.**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({link})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n💡 **𝐒𝐭𝐚𝐭𝐮𝐬:** `Playing`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲𝐞:** {m.from_user.mention()}",
+                    caption=f"💡 **мυѕι¢ ѕтяєαмιηg ѕтαятℓσѕѕ.**\n\n🏷 **ηαмє:** [{songname}]({link})\n💭 **¢нαт:** `{chat_id}`\n💡 **ѕтαтυѕ:** `Playing`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}",
                     reply_markup=keyboard,
                 )
         else:
             if len(m.command) < 2:
                 await m.reply(
-                    "» reply to an **audio file** or **give something to search.**"
+                    "» reply to an **αυ∂ισ ƒιℓє** or **gινє ѕσмєтнιηg тσ ѕєαя¢н.**"
                 )
             else:
-                suhu = await m.reply("🔎 **𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠...**")
+                suhu = await m.reply("🔎 **ѕєαя¢нιηg...**")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 if search == 0:
-                    await suhu.edit("❌ **𝐍𝐨 𝐑𝐞𝐬𝐮𝐥𝐭𝐬 𝐅𝐨𝐮𝐧𝐝.**")
+                    await suhu.edit("❌ **ησ яєѕυℓтѕ ƒσυη∂.**")
                 else:
                     songname = search[0]
                     url = search[1]
@@ -127,7 +127,7 @@ async def play(_, m: Message):
                             await suhu.delete()
                             await m.reply_photo(
                                 photo=f"https://telegra.ph/file/ed349acfdc85b6dd88fac.jpg",
-                                caption=f"💡 **𝐌𝐮𝐬𝐢𝐜 𝐃𝐢𝐭𝐚𝐦𝐛𝐚𝐡𝐤𝐚𝐧 𝐊𝐞 𝐀𝐧𝐭𝐫𝐢𝐚𝐧**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({url})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲𝐞:** {m.from_user.mention()}\n🔢 **𝐒𝐞𝐝𝐚𝐧𝐠 𝐀𝐧𝐭𝐫𝐢 𝐃𝐢 𝐏𝐨𝐬𝐢𝐬𝐢 »** `{pos}`",
+                                caption=f"💡 **мυѕι¢ ∂ιтαмвαнкαη кє αηтяιαη**\n\n🏷 **ηαмє:** [{songname}]({url})\n💭 **¢нαт:** `{chat_id}`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}\n🔢 **ѕє∂αηg αηтяι ∂ι ρσѕιѕι »** `{pos}`",
                                 reply_markup=keyboard,
                             )
                         else:
@@ -143,7 +143,7 @@ async def play(_, m: Message):
                                 await suhu.delete()
                                 await m.reply_photo(
                                     photo=f"https://telegra.ph/file/ed349acfdc85b6dd88fac.jpg",
-                                    caption=f"💡 **𝐌𝐮𝐬𝐢𝐜 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠 𝐒𝐭𝐚𝐫𝐭𝐞𝐝.**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({url})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n💡 **𝐒𝐭𝐚𝐭𝐮𝐬:** `Playing`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲𝐞:** {m.from_user.mention()}",
+                                    caption=f"💡 **мυѕι¢ ѕтяєαмιηg ѕтαятℓσѕѕ.**\n\n🏷 **ηαмє:** [{songname}]({url})\n💭 **¢нαт:** `{chat_id}`\n💡 **ѕтαтυѕ:** `Playing`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}",
                                     reply_markup=keyboard,
                                 )
                             except Exception as ep:
@@ -152,14 +152,14 @@ async def play(_, m: Message):
     else:
         if len(m.command) < 2:
             await m.reply(
-                "» reply to an **audio file** or **𝐆𝐢𝐯𝐞 𝐒𝐨𝐦𝐞𝐭𝐡𝐢𝐧𝐠 𝐓𝐨 𝐒𝐞𝐚𝐫𝐜𝐡.**"
+                "» reply to an **audio file** or **gινє ѕσмєтнιηg тσ ѕєαя¢н.**"
             )
         else:
-            suhu = await m.reply("🔎 **𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠...**")
+            suhu = await m.reply("🔎 **ѕєαя¢нιηg...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
-            if search == 0:
-                await suhu.edit("❌ **𝐍𝐨 𝐑𝐞𝐬𝐮𝐥𝐭𝐬 𝐅𝐨𝐮𝐧𝐝.**")
+            if search == 0:q
+                await suhu.edit("❌ **ησ яєѕυℓтѕ ƒσυη∂.**")
             else:
                 songname = search[0]
                 url = search[1]
@@ -172,7 +172,7 @@ async def play(_, m: Message):
                         await suhu.delete()
                         await m.reply_photo(
                             photo=f"https://telegra.ph/file/ed349acfdc85b6dd88fac.jpg",
-                            caption=f"💡 **𝐌𝐮𝐬𝐢𝐜 𝐃𝐢𝐭𝐚𝐦𝐛𝐚𝐡𝐤𝐚𝐧 𝐊𝐞 𝐀𝐧𝐭𝐫𝐢𝐚𝐧**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({url})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲𝐞:** {m.from_user.mention()}\n🔢 **𝐒𝐞𝐝𝐚𝐧𝐠 𝐀𝐧𝐭𝐫𝐢 𝐃𝐢 𝐏𝐨𝐬𝐢𝐬𝐢 »** `{pos}`",
+                            caption=f"💡 **мυѕι¢ ∂ιтαмвαнкαη кє αηтяιαη**\n\n🏷 **ηαмє:** [{songname}]({url})\n💭 **¢нαт:** `{chat_id}`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}\n🔢 **ѕє∂αηg αηтяι ∂ι ρσѕιѕι »** `{pos}`",
                             reply_markup=keyboard,
                         )
                     else:
@@ -188,9 +188,9 @@ async def play(_, m: Message):
                             await suhu.delete()
                             await m.reply_photo(
                                 photo=f"https://telegra.ph/file/ed349acfdc85b6dd88fac.jpg",
-                                caption=f"💡 **𝐌𝐮𝐬𝐢𝐜 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠 𝐒𝐭𝐚𝐫𝐭𝐞𝐝.**\n\n🏷 **𝐍𝐚𝐦𝐞:** [{songname}]({url})\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n💡 **𝐒𝐭𝐚𝐭𝐮𝐬:** `Playing`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲𝐞:** {m.from_user.mention()}",
+                                caption=f"💡 **music streaming startloss.**\n\n🏷 **ηαмє:** [{songname}]({url})\n💭 **¢нαт:** `{chat_id}`\n💡 **𝐒𝐭𝐚𝐭𝐮𝐬:** `Playing`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲𝐞:** {m.from_user.mention()}",
                                 reply_markup=keyboard,
-                            )
+                            )@
                         except Exception as ep:
                             await m.reply_text(f"🚫 error: `{ep}`")
 
@@ -204,10 +204,10 @@ async def stream(_, m: Message):
         [
             [
                 InlineKeyboardButton(
-                    text="✨𝐆𝐫𝐨𝐮𝐩𝐬✨", url=f"https://t.me/{GROUP_SUPPORT}"
+                    text="✨gяσυρѕ✨", url=f"https://t.me/{GROUP_SUPPORT}"
                 ),
                 InlineKeyboardButton(
-                    text="✨𝐂𝐡𝐚𝐧𝐧𝐞𝐥✨", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    text="✨¢нαηηєℓ✨", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]
@@ -216,11 +216,7 @@ async def stream(_, m: Message):
     chat_id = m.chat.id
     if len(m.command) < 2:
         await m.reply("» give me a live-link/m3u8 url/youtube link to stream.")
-    else:
-        link = m.text.split(None, 1)[1]
-        suhu = await m.reply("🔄 **𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠 𝐒𝐭𝐫𝐞𝐚𝐦...**")
-
-        regex = r"^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+"
+    else:"youtube\.com|youtu\.?be)\/.+"
         match = re.match(regex, link)
         if match:
             veez, livelink = await ytdl(link)
@@ -236,7 +232,7 @@ async def stream(_, m: Message):
                 await suhu.delete()
                 await m.reply_photo(
                     photo=f"https://telegra.ph/file/ed349acfdc85b6dd88fac.jpg",
-                    caption=f"💡 **𝐌𝐮𝐬𝐢𝐜 𝐃𝐢𝐭𝐚𝐦𝐛𝐚𝐡𝐤𝐚𝐧 𝐊𝐞 𝐀𝐧𝐭𝐫𝐢𝐚𝐧**\n\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲𝐞:** {m.from_user.mention()}\n🔢 **𝐒𝐞𝐝𝐚𝐧𝐠 𝐀𝐧𝐭𝐫𝐢 𝐃𝐢 𝐏𝐨𝐬𝐢𝐬𝐢 »** `{pos}`",
+                    caption=f"💡 **мυѕι¢ ∂ιтαмвαнкαη кє αηтяιαη**\n\n💭 **chat:** `{chat_id}`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}\n🔢 **ѕє∂αηg αηтяι ∂ι ρσѕιѕι »** `{pos}`",
                     reply_markup=keyboard,
                 )
             else:
@@ -252,7 +248,7 @@ async def stream(_, m: Message):
                     await suhu.delete()
                     await m.reply_photo(
                         photo=f"https://telegra.ph/file/ed349acfdc85b6dd88fac.jpg",
-                        caption=f"💡 **[Radio live]({link}) 𝐒𝐭𝐫𝐞𝐚𝐦 𝐒𝐭𝐚𝐫𝐭𝐞𝐝.**\n\n💭 **𝐂𝐡𝐚𝐭:** `{chat_id}`\n💡 **𝐒𝐭𝐚𝐭𝐮𝐬:** `Playing`\n🎧 **𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐛𝐲𝐞:** {m.from_user.mention()}",
+                        caption=f"💡 **[Radio live]({link}) ѕтяєαм ѕтαятℓσѕѕ.**\n\n💭 **¢нαт:** `{chat_id}`\n💡 **ѕтαтυѕ:** `Playing`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}",
                         reply_markup=keyboard,
                     )
                 except Exception as ep:
