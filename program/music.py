@@ -112,7 +112,7 @@ async def play(_, m: Message):
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 if search == 0:
-                    await suhu.edit("❌ **ησ яєѕυℓтѕ ƒσυη∂.**")
+                    await suhu.edit("❌ **тι∂αк α∂α нαѕιℓ уαηg ∂ιтємυкαη.**")
                 else:
                     songname = search[0]
                     url = search[1]
@@ -159,7 +159,7 @@ async def play(_, m: Message):
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:q
-                await suhu.edit("❌ **ησ яєѕυℓтѕ ƒσυη∂.**")
+                await suhu.edit("❌ **тι∂αк α∂α нαѕιℓ уαηg ∂ιтємυкαη.**")
             else:
                 songname = search[0]
                 url = search[1]
