@@ -9,7 +9,7 @@
         "pyrogram"
     ],
     "website": "https://t.me/storeglitter",
-    "repository": "https://github.com/GLITTERneey/video-stream",
+    "repository": "https://github.com/GLITTERneey/MusicV",
     "success_url": "https://t.me/dlwrml",
     "env": {
         "API_ID": {
