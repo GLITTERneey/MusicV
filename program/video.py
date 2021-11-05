@@ -99,7 +99,7 @@ async def vplay(client, m: Message):
                 pos = add_to_queue(chat_id, songname, dl, link, "Video", Q)
                 await loser.delete()
                 await m.reply_photo(
-                    photo=f"https://telegra.ph/file/ed349acfdc85b6dd88fac.jpg",
+                    photo=f"https://telegra.ph/file/4f190083ac08468af47ee.jpg",
                     caption=f"💡 **νι∂єσ ∂ιтαмвαнкαη кє αηтяιαη**\n\n🏷 **ηαмє:** [{songname}]({link})\n💭 **¢нαт:** `{chat_id}`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}\n🔢 **ѕє∂αηg αηтяι ∂ι ρσѕιѕι »** `{pos}`",
                     reply_markup=keyboard,
                 )
@@ -118,7 +118,7 @@ async def vplay(client, m: Message):
                 add_to_queue(chat_id, songname, dl, link, "Video", Q)
                 await loser.delete()
                 await m.reply_photo(
-                    photo=f"https://telegra.ph/file/ed349acfdc85b6dd88fac.jpg",
+                    photo=f"https://telegra.ph/file/4f190083ac08468af47ee.jpg",
                     caption=f"💡 **νι∂єσ ѕтяєαмιηg ѕтαятℓσѕѕ.**\n\n🏷 **ηαмє:** [{songname}]({link})\n💭 **¢нαт:** `{chat_id}`\n💡 **ѕтαтυѕ:** `Playing`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}",
                     reply_markup=keyboard,
                 )
@@ -148,7 +148,7 @@ async def vplay(client, m: Message):
                             )
                             await loser.delete()
                             await m.reply_photo(
-                                photo=f"https://telegra.ph/file/ed349acfdc85b6dd88fac.jpg",
+                                photo=f"https://telegra.ph/file/4f190083ac08468af47ee.jpg",
                                 caption=f"💡 **νι∂єσ ∂ιтαмвαнкαη кє αηтяιαη**\n\n🏷 **ηαмє:** [{songname}]({url})\n💭 **¢нαт:** `{chat_id}`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}\n🔢 **ѕє∂αηg αηтяι ∂ι ρσѕιѕι »** `{pos}`",
                                 reply_markup=keyboard,
                             )
@@ -162,7 +162,7 @@ async def vplay(client, m: Message):
                                 add_to_queue(chat_id, songname, ytlink, url, "Video", Q)
                                 await loser.delete()
                                 await m.reply_photo(
-                                    photo=f"https://telegra.ph/file/ed349acfdc85b6dd88fac.jpg",
+                                    photo=f"https://telegra.ph/file/4f190083ac08468af47ee.jpg",
                                     caption=f"💡 **νι∂єσ ѕтяєαмιηg ѕтαятℓσѕѕ.**\n\n🏷 **ηαмє:** [{songname}]({url})\n💭 **¢нαт:** `{chat_id}`\n💡 **ѕтαтυѕ:** `Playing`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}",
                                     reply_markup=keyboard,
                                 )
@@ -193,7 +193,7 @@ async def vplay(client, m: Message):
                         pos = add_to_queue(chat_id, songname, ytlink, url, "Video", Q)
                         await loser.delete()
                         await m.reply_photo(
-                            photo=f"https://telegra.ph/file/ed349acfdc85b6dd88fac.jpg",
+                            photo=f"https://telegra.ph/file/4f190083ac08468af47ee.jpg",
                             caption=f"💡 **νι∂єσ ∂ιтαмвαнкαη кє αηтяιαη**\n\n🏷 **ηαмє:** [{songname}]({url})\n💭 **¢нαт:** `{chat_id}`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}\n🔢 **ѕє∂αηg αηтяι ∂ι ρσѕιѕι𝐒 »** `{pos}`",
                             reply_markup=keyboard,
                         )
@@ -207,7 +207,7 @@ async def vplay(client, m: Message):
                             add_to_queue(chat_id, songname, ytlink, url, "Video", Q)
                             await loser.delete()
                             await m.reply_photo(
-                                photo=f"https://telegra.ph/file/ed349acfdc85b6dd88fac.jpg",
+                                photo=f"https://telegra.ph/file/4f190083ac08468af47ee.jpg",
                                 caption=f"💡 **νι∂єσ ѕтяєαмιηg ѕтαятℓσѕѕ.**\n\n🏷 **ηαмє:** [{songname}]({url})\n💭 **¢нαт:** `{chat_id}`\n💡 **ѕтαтυѕ:** `Playing`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}",
                                 reply_markup=keyboard,
                             )
@@ -269,7 +269,7 @@ async def vstream(client, m: Message):
                 pos = add_to_queue(chat_id, "Live Stream", livelink, link, "Video", Q)
                 await loser.delete()
                 await m.reply_photo(
-                    photo=f"https://telegra.ph/file/ed349acfdc85b6dd88fac.jpg",
+                    photo=f"https://telegra.ph/file/4f190083ac08468af47ee.jpg",
                     caption=f"💡 **νι∂єσ ∂ιтαмвαнкαη кє αηтяιαη**\n\n💭 **¢нαт:** `{chat_id}`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}\n🔢 **ѕє∂αηg αηтяι ∂ι ρσѕιѕι »** `{pos}`",
                     reply_markup=keyboard,
                 )
@@ -289,7 +289,7 @@ async def vstream(client, m: Message):
                     add_to_queue(chat_id, "Live Stream", livelink, link, "Video", Q)
                     await loser.delete()
                     await m.reply_photo(
-                        photo=f"https://telegra.ph/file/ed349acfdc85b6dd88fac.jpg",
+                        photo=f"https://telegra.ph/file/4f190083ac08468af47ee.jpg",
                         caption=f"💡 **[ℓινє ѕтяєαмιηg νι∂єσ]({link}) ѕтαятℓσѕѕ.**\n\n💭 **¢нαт:** `{chat_id}`\n💡 **ѕтαтυѕ:** `Playing`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}",
                         reply_markup=keyboard,
                     )
