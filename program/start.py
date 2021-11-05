@@ -63,32 +63,32 @@ async def start_(client: Client, message: Message):
 ┣• 𝐌𝐞𝐧𝐜𝐚𝐫𝐢 𝐋𝐚𝐠𝐮 𝐘𝐚𝐧𝐠 𝐢𝐧𝐠𝐢𝐧 𝐝𝐢 𝐏𝐮𝐭𝐚𝐫 𝐚𝐭𝐚𝐮 𝐝𝐢 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝.
 ┣• 𝐆𝐮𝐧𝐚𝐤𝐚𝐧 𝐏𝐞𝐫𝐢𝐧𝐭𝐚𝐡 » /help « 𝐮𝐧𝐭𝐮𝐤 𝐌𝐞𝐧𝐠𝐞𝐭𝐚𝐡𝐮𝐢 𝐅𝐢𝐭𝐮𝐫 𝐋𝐞𝐧𝐠𝐤𝐚𝐩 𝐒𝐚𝐲𝐚
 ┗━━━━━━━━━━━━━━ 
-✨ 𝐓𝐞𝐫𝐢𝐦𝐚𝐊𝐚𝐬𝐢𝐡 𝐓𝐞𝐥𝐚𝐡 𝐌𝐞𝐧𝐠𝐠𝐮𝐧𝐚𝐤𝐚𝐧 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐈𝐧𝐢! [{OWNER_NAME}](https://t.me/{OWNER_NAME})!**
+✨ 𝐓𝐞𝐫𝐢𝐦𝐚𝐊𝐚𝐬𝐢𝐡 𝐓𝐞𝐥𝐚𝐡 𝐌𝐞𝐧𝐠𝐠𝐮𝐧𝐚𝐤𝐚𝐧 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐈𝐧𝐢! [𝐆𝐋𝐈𝐓𝐓𝐄𝐑](https://t.me/{OWNER_NAME})!**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ 𝐓𝐚𝐦𝐛𝐚𝐡𝐤𝐚𝐧 𝐒𝐚𝐲𝐚 𝐊𝐞 𝐆𝐫𝐨𝐮𝐩𝐬 𝐀𝐧𝐝𝐚 ➕",
+                        "➕ тαмвαнкαη ѕαуα кє gяσυρѕ αη∂α ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("❓ 𝐁𝐚𝐬𝐢𝐜 𝐆𝐮𝐢𝐝𝐞", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("❓ вαѕι¢ gυι∂є", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬", callback_data="cbcmds"),
-                    InlineKeyboardButton("🌻 𝐃𝐨𝐧𝐚𝐭𝐮𝐫 🌻", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("📚 ¢σммαη∂ѕ", callback_data="cbcmds"),
+                    InlineKeyboardButton("🃏 ∂σηαтυя 🃏", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "✨𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐆𝐫𝐨𝐮𝐩✨", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "✨σƒƒι¢ιαℓ gяσυρѕ✨", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "🌻𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🌻", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "🌻σƒƒι¢ιαℓ ¢нαηηєℓ🌻", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🤖 𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞 🤖", url="https://t.me/Biarenakliatnyaaa"
+                        "🤖 ѕσυя¢є ¢σ∂є 🤖", url="https://t.me/Biarenakliatnyaaa"
                     )
                 ],
             ]
@@ -108,15 +108,15 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨𝐆𝐫𝐨𝐮𝐩✨", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("✨gяσυρѕ✨", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "🌻𝐂𝐡𝐚𝐧𝐧𝐞𝐥🌻", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "🌻¢нαηηєℓ🌻", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]
     )
 
-    alive = f"**𝐇𝐞𝐥𝐥𝐨🙋‍♂️ {message.from_user.mention()}, 𝐢'𝐦 {BOT_NAME}**\n\n✨ 𝐁𝐨𝐭 𝐢𝐬 𝐰𝐨𝐫𝐤𝐢𝐧𝐠 𝐧𝐨𝐫𝐦𝐚𝐥𝐥𝐲\n🍀 𝐌𝐲 𝐌𝐚𝐬𝐭𝐞𝐫: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n✨ 𝐁𝐨𝐭 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: `v{__version__}`\n🍀 𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: `{pyrover}`\n✨ 𝐏𝐲𝐭𝐡𝐨𝐧 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: `{__python_version__}`\n🍀 𝐏𝐲𝐓𝐠𝐂𝐚𝐥𝐥𝐬 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: `{pytover.__version__}`\n✨ 𝐔𝐩𝐭𝐢𝐦𝐞 𝐒𝐭𝐚𝐭𝐮𝐬: `{uptime}`\n\n**𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐀𝐝𝐝𝐢𝐧𝐠 𝐌𝐞 𝐇𝐞𝐫𝐞, 𝐅𝐨𝐫 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 𝐕𝐢𝐝𝐞𝐨 & 𝐌𝐮𝐬𝐢𝐜 𝐎𝐧 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩  𝐕𝐢𝐝𝐞𝐨 𝐂𝐡𝐚𝐭** ❤"
+    alive = f"**нєℓℓσ🙋‍♂️ {message.from_user.mention()}, ι'м {BOT_NAME}**\n\n✨ вσт ιѕ ωσякιηg ησямαℓℓу\n🍀 му мαѕтєя: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n✨ вσт νєяѕιση: `v{__version__}`\n🍀 ρуяσgяαм νєяѕιση: `{pyrover}`\n✨ ρутнση νєяѕιση: `{__python_version__}`\n🍀 ρутg¢αℓℓѕ νєяѕιση: `{pytover.__version__}`\n✨ υρтιмє ѕтαтυѕ: `{uptime}`\n\n**тнαηкѕ ƒσя α∂∂ιηg мє нєяє, ƒσя ρℓαуιηg νι∂єσ & мυѕι¢ ση уσυя gяσυρѕ νι∂єσ ¢нαт** ❤"
 
     await message.reply_photo(
         photo=f"https://telegra.ph/file/e3687c2f0d0cdf01a83f5.jpg",
