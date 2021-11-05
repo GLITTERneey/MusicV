@@ -1,7 +1,5 @@
 <p align="center"><a href="https://t.me/VeezVideoBot"><img src="https://github.com/levina-lab/video-stream/raw/main/driver/veezlogo.png"></a></p>
 <p align="center">
-  <img src="https://telegra.ph/file/4f190083ac08468af47ee.png">
-<p align="center">
     <br><b>Video Stream is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
 </p>
 <p align="center">
@@ -23,6 +21,8 @@
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@levinalab/StringSession#main.py) ``Pyrogram``
 
 ## 🎭 Preview
+<p align="center">
+  <img src="https://telegra.ph/file/8279c813f51fce516c896.png">
 <p align="center">
 
 </p>
