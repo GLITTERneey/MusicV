@@ -134,8 +134,8 @@ async def play(c: Client, m: Message):
                 pos = add_to_queue(chat_id, songname, dl, link, "Audio", 0)
                 await suhu.delete()
                 await m.reply_photo(
-                    photo=f"{IMG_1}",
-                    caption=f"💡 **ℓα¢αк ∂ιтαмвαнкαη кє αηтяєαη**\n\n🏷 **ηαмє:** [{songname}]({link})\n💭 **¢нαт:** `{chat_id}`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}\n🔢 **αηтяι ∂ι ρσѕιѕι »** `{pos}`",
+                    photo=f"https://telegra.ph/file/36f6751021f354541efdc.jpg",
+                    caption=f"💡 **ℓαgυ ∂ιтαмвαнкαη кє αηтяєαη**\n\n🏷 **ηαмє:** [{songname}]({link})\n💭 **¢нαт:** `{chat_id}`\n🎧 **яєqυєѕт вує:** {m.from_user.mention()}\n🔢 **αηтяι ∂ι ρσѕιѕι »** `{pos}`",
                     reply_markup=keyboard,
                 )
             else:
@@ -150,7 +150,7 @@ async def play(c: Client, m: Message):
                 await suhu.delete()
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
-                    photo=f"{IMG_2}",
+                    photo=f"https://telegra.ph/file/36f6751021f354541efdc.jpg",
                     caption=f"💡 **ѕтяєαмιηg мυѕιк ∂ιмυℓαι.**\n\n🏷 **ηαмє:** [{songname}]({link})\n💭 **¢нαт:** `{chat_id}`\n💡 **ѕтαтυѕ:** `Playing`\n🎧 **яєqυєѕт вує:** {requester}",
                     reply_markup=keyboard,
                 )
@@ -179,8 +179,8 @@ async def play(c: Client, m: Message):
                             await suhu.delete()
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
-                                photo=f"{IMG_1}",
-                                caption=f"💡 **ℓα¢αк ∂ιтαмвαнкαη кє αηтяєαη**\n\n🏷 **ηαмє:** [{songname}]({url})\n💭 **¢нαт:** `{chat_id}`\n🎧 **яєqυєѕт вує:** {requester}\n🔢 **αηтяι ∂ι ρσѕιѕι »** `{pos}`",
+                                photo=f"https://telegra.ph/file/36f6751021f354541efdc.jpg",
+                                caption=f"💡 **ℓαgυ ∂ιтαмвαнкαη кє αηтяєαη**\n\n🏷 **ηαмє:** [{songname}]({url})\n💭 **¢нαт:** `{chat_id}`\n🎧 **яєqυєѕт вує:** {requester}\n🔢 **αηтяι ∂ι ρσѕιѕι »** `{pos}`",
                                 reply_markup=keyboard,
                             )
                         else:
@@ -196,7 +196,7 @@ async def play(c: Client, m: Message):
                                 await suhu.delete()
                                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                                 await m.reply_photo(
-                                    photo=f"{IMG_2}",
+                                    photo=f"https://telegra.ph/file/36f6751021f354541efdc.jpg",
                                     caption=f"💡 **ѕтяєαмιηg мυѕιк ∂ιмυℓαι.**\n\n🏷 **ηαмє:** [{songname}]({url})\n💭 **¢нαт:** `{chat_id}`\n💡 **ѕтαтυѕ:** `Playing`\n🎧 **яєqυєѕт вує:** {requester}",
                                     reply_markup=keyboard,
                                 )
@@ -228,8 +228,8 @@ async def play(c: Client, m: Message):
                             f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                         )
                         await m.reply_photo(
-                            photo=f"{IMG_1}",
-                            caption=f"💡 **ℓα¢αк ∂ιтαмвαнкαη кє αηтяєαη**\n\n🏷 **ηαмє:** [{songname}]({url})\n💭 **¢нαт:** `{chat_id}`\n🎧 **яєqυєѕт вує:** {requester}\n🔢 **αηтяι ∂ι ρσѕιѕι »** `{pos}`",
+                            photo=f"https://telegra.ph/file/36f6751021f354541efdc.jpg",
+                            caption=f"💡 **ℓαgυ ∂ιтαмвαнкαη кє αηтяєαη**\n\n🏷 **ηαмє:** [{songname}]({url})\n💭 **¢нαт:** `{chat_id}`\n🎧 **яєqυєѕт вує:** {requester}\n🔢 **αηтяι ∂ι ρσѕιѕι »** `{pos}`",
                             reply_markup=keyboard,
                         )
                     else:
@@ -245,7 +245,7 @@ async def play(c: Client, m: Message):
                             await suhu.delete()
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
-                                photo=f"{IMG_2}",
+                                photo=f"https://telegra.ph/file/36f6751021f354541efdc.jpg",
                                 caption=f"💡 **music streaming started.**\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
                                 reply_markup=keyboard,
                             )
@@ -342,8 +342,8 @@ async def stream(c: Client, m: Message):
                 await suhu.delete()
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
-                    photo=f"{IMG_1}",
-                    caption=f"💡 **ℓα¢αк ∂ιтαмвαнкαη кє αηтяєαη**\n\n💭 **¢нαт:** `{chat_id}`\n🎧 **яєqυєѕт вує:** {requester}\n🔢 **αηтяι ∂ι ρσѕιѕι »** `{pos}`",
+                    photo=f"https://telegra.ph/file/36f6751021f354541efdc.jpg",
+                    caption=f"💡 **ℓαgυ ∂ιтαмвαнкαη кє αηтяєαη**\n\n💭 **¢нαт:** `{chat_id}`\n🎧 **яєqυєѕт вує:** {requester}\n🔢 **αηтяι ∂ι ρσѕιѕι »** `{pos}`",
                     reply_markup=keyboard,
                 )
             else:
@@ -361,7 +361,7 @@ async def stream(c: Client, m: Message):
                         f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                     )
                     await m.reply_photo(
-                        photo=f"{IMG_2}",
+                        photo=f"https://telegra.ph/file/36f6751021f354541efdc.jpg",
                         caption=f"💡 **[яα∂ισ ℓινє]({link}) ѕтяєαм ѕтαятє∂.**\n\n💭 **¢нαт:** `{chat_id}`\n💡 **ѕтαтυѕ:** `Playing`\n🎧 **яєqυєѕт вує:** {requester}",
                         reply_markup=keyboard,
                     )
