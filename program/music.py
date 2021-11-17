@@ -71,7 +71,7 @@ async def play(c: Client, m: Message):
     a = await c.get_chat_member(chat_id, aing.id)
     if a.status != "administrator":
         await m.reply_text(
-            f"💡 ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ sᴀʏᴀ, sᴀʏᴀ ʜᴀʀᴜs ᴍᴇɴᴊᴀᴅɪ **ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ** ᴅᴇɴɢᴀɴ ʙᴇʀɪᴋᴜᴛ ɪɴɪ **ᴘᴇʀᴍɪssɪᴏɴs**:\n\n» ❌ __Delete messages__\n» ❌ __Restrict users__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
+            f" ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ sᴀʏᴀ, sᴀʏᴀ ʜᴀʀᴜs ᴍᴇɴᴊᴀᴅɪ **ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ** ᴅᴇɴɢᴀɴ ʙᴇʀɪᴋᴜᴛ ɪɴɪ **ᴘᴇʀᴍɪssɪᴏɴs**:\n\n» ❌ __Delete messages__\n» ❌ __Restrict users__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
         )
         return
     if not a.can_manage_voice_chats:
@@ -137,7 +137,7 @@ async def play(c: Client, m: Message):
                 await suhu.delete()
                 await m.reply_photo(
                     photo=f"https://telegra.ph/file/16b01ed4051929fc226ba.png",
-                    caption=f"💡 **ᴍᴜsɪᴄ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **Name:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {m.from_user.mention()}",
+                    caption=f" **ᴍᴜsɪᴄ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **Name:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {m.from_user.mention()}",
                     reply_markup=keyboard,
                 )
             else:
@@ -154,7 +154,7 @@ async def play(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"https://telegra.ph/file/16b01ed4051929fc226ba.png",
-                    caption=f"💡 **ᴍᴜsɪᴄ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({link})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
+                    caption=f" **ᴍᴜsɪᴄ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({link})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                     reply_markup=keyboard,
                 )
              except Exception as e:
@@ -166,7 +166,7 @@ async def play(c: Client, m: Message):
                     "» reply to an **audio file** or **give something to search.**"
                 )
             else:
-                suhu = await m.reply("🔎 **ᴍᴇᴍᴘᴇʀsᴏsᴇs, sᴀʙᴀʀ ɴᴀᴘᴀ ᴋɴᴛʟ...**")
+                suhu = await m.reply("🔁 **ᴍᴇᴍᴘᴇʀsᴏsᴇs, sᴀʙᴀʀ ɴᴀᴘᴀ ᴋɴᴛʟ...**")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 if search == 0:
@@ -186,7 +186,7 @@ async def play(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=f"https://telegra.ph/file/16b01ed4051929fc226ba.png",
-                                caption=f"💡 **ᴍᴜsɪᴄ ᴅɪ ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏᴇ:** {requester}",
+                                caption=f" **ᴍᴜsɪᴄ ᴅɪ ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏᴇ:** {requester}",
                                 reply_markup=keyboard,
                             )
                         else:
@@ -203,7 +203,7 @@ async def play(c: Client, m: Message):
                                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                                 await m.reply_photo(
                                     photo=f"https://telegra.ph/file/16b01ed4051929fc226ba.png",
-                                    caption=f"💡 **ᴍᴜsɪᴄ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                                    caption=f" **ᴍᴜsɪᴄ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
                                     reply_markup=keyboard,
                                 )
                             except Exception as ep:
@@ -216,7 +216,7 @@ async def play(c: Client, m: Message):
                 "» reply to an **audio file** or **give something to search.**"
             )
         else:
-            suhu = await m.reply("🔎 **ᴍᴇᴍᴘᴇʀsᴏsᴇs, sᴀʙᴀʀ ɴᴀᴘᴀ ᴋɴᴛʟ...**")
+            suhu = await m.reply("🔁 **ᴍᴇᴍᴘᴇʀsᴏsᴇs, sᴀʙᴀʀ ɴᴀᴘᴀ ᴋɴᴛʟ...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -236,7 +236,7 @@ async def play(c: Client, m: Message):
                         )
                         await m.reply_photo(
                             photo=f"https://telegra.ph/file/16b01ed4051929fc226ba.png",
-                            caption=f"💡 **ᴍᴜsɪᴄ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
+                            caption=f" **ᴍᴜsɪᴄ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                             reply_markup=keyboard,
                         )
                     else:
@@ -253,7 +253,7 @@ async def play(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=f"https://telegra.ph/file/16b01ed4051929fc226ba.png",
-                                caption=f"💡 **ᴍᴜsɪᴄ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
+                                caption=f" **ᴍᴜsɪᴄ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                                 reply_markup=keyboard,
                             )
                         except Exception as ep:
@@ -353,7 +353,7 @@ async def stream(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"https://telegra.ph/file/7cc4bfe6de07c0c6676cc.png",
-                    caption=f"💡 **ᴍᴜsɪᴄ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
+                    caption=f" **ᴍᴜsɪᴄ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                     reply_markup=keyboard,
                 )
             else:
@@ -372,7 +372,7 @@ async def stream(c: Client, m: Message):
                     )
                     await m.reply_photo(
                         photo=f"https://telegra.ph/file/16b01ed4051929fc226ba.png",
-                        caption=f"💡 **[Music live]({link}) stream started.**\n\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                        caption=f" **[Music live]({link}) stream started.**\n\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
                         reply_markup=keyboard,
                     )
                 except Exception as ep:
