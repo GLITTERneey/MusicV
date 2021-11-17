@@ -69,26 +69,26 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ тαмвαнкαη ѕαуα кє gяσυρѕ αη∂α ➕",
+                        "➕ 𝐓𝐚𝐦𝐛𝐚𝐡𝐤𝐚𝐧 𝐆𝐮𝐚 𝐊𝐞 𝐆𝐫𝐨𝐮𝐩 𝐋𝐮 𝐊𝐧𝐭𝐥 🙋‍♂️",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("❓ вαѕι¢ gυι∂є", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("𝐁𝐚𝐬𝐢𝐜 𝐆𝐮𝐢𝐥𝐝𝐞", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 ¢σммαη∂ѕ", callback_data="cbcmds"),
-                    InlineKeyboardButton("🃏 ∂σηαтυя 🃏", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬", callback_data="cbcmds"),
+                    InlineKeyboardButton("𝐃𝐨𝐧𝐚𝐭𝐮𝐫", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
-                    InlineKeyboardButton(
-                        "✨σƒƒι¢ιαℓ gяσυρѕ✨", url=f"https://t.me/{GROUP_SUPPORT}"
+                    InlineKeyboardButton( 
+                        "𝐆𝐫𝐨𝐮𝐩", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "🌻σƒƒι¢ιαℓ ¢нαηηєℓ🌻", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
-                    InlineKeyboardButton(
-                        "🤖 ѕσυя¢є ¢σ∂є 🤖", url="https://t.me/Biarenakliatnyaaa"
+                    InlineKeyboardButton( 
+                        "𝐒𝐨𝐫𝐜𝐞 𝐂𝐨𝐝𝐞", url="https://t.me/Biarenakliatnyaaa"
                     )
                 ],
             ]
@@ -105,12 +105,12 @@ async def alive(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
 
-    keyboard = InlineKeyboardMarkup(
+    keyboard = InlineKeyboardMarkup( 
         [
             [
-                InlineKeyboardButton("✨gяσυρѕ✨", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("𝐆𝐫𝐨𝐮𝐩𝐬", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "🌻¢нαηηєℓ🌻", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]
