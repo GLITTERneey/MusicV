@@ -38,7 +38,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [InlineKeyboardButton("ʙᴀsɪᴄ ɢᴜɪʟᴅᴇ", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅs, callback_data="cbcmds"),
+                    InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅs", callback_data="cbcmds"),
                     InlineKeyboardButton("ᴅᴏɴᴀᴛᴜʀ", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
