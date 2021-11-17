@@ -77,7 +77,7 @@ async def vplay(c: Client, m: Message):
     a = await c.get_chat_member(chat_id, aing.id)
     if a.status != "administrator":
         await m.reply_text(
-            f"💡 To use me, I need to be an **Administrator** with the following **permissions**:\n\n» ❌ __Delete messages__\n» ❌ __Restrict users__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
+            f"💡 ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ sᴀʏᴀ, sᴀʏᴀ ʜᴀʀᴜs ᴍᴇɴᴊᴀᴅɪ **ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ** ᴅᴇɴɢᴀɴ ʙᴇʀɪᴋᴜᴛ ɪɴɪ **ᴘᴇʀᴍɪssɪᴏɴs**:\n\n» ❌ __Delete messages__\n» ❌ __Restrict users__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
         )
         return
     if not a.can_manage_voice_chats:
@@ -101,7 +101,7 @@ async def vplay(c: Client, m: Message):
         b = await c.get_chat_member(chat_id, ubot.id)
         if b.status == "kicked":
             await m.reply_text(
-                f"@{ASSISTANT_NAME} **is banned in group** {m.chat.title}\n\n» **unban the userbot first if you want to use this bot.**"
+                f"@{ASSISTANT_NAME} **ᴅɪʙᴀɴ ᴅɪ ɢʀᴏᴜᴘ ɪɴɪ ᴋɴᴛʟ** {m.chat.title}\n\n» **ᴜɴʙᴀɴ ᴜsᴇʀʙᴏᴛ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ ᴊɪᴋᴀ ɪɴɢɪɴ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ ɪɴɪ.**"
             )
             return
     except UserNotParticipant:
@@ -109,7 +109,7 @@ async def vplay(c: Client, m: Message):
             try:
                 await user.join_chat(m.chat.username)
             except Exception as e:
-                await m.reply_text(f"❌ **userbot failed to join**\n\n**reason**: `{e}`")
+                await m.reply_text(f"❌ **ᴜsᴇʀʙᴏᴛ ɢᴀɢᴀʟ ʙᴇʀɢᴀʙᴜɴɢ**\n\n**reason**: `{e}`")
                 return
         else:
             try:
@@ -120,12 +120,12 @@ async def vplay(c: Client, m: Message):
                 pass
             except Exception as e:
                 return await m.reply_text(
-                    f"❌ **userbot failed to join**\n\n**reason**: `{e}`"
+                    f"❌ **ᴜsᴇʀʙᴏᴛ ɢᴀɢᴀʟ ʙᴇʀɢᴀʙᴜɴɢ**\n\n**reason**: `{e}`"
                 )
 
     if replied:
         if replied.video or replied.document:
-            loser = await replied.reply("📥 **downloading video...**")
+            loser = await replied.reply("📥 **ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴠɪᴅᴇᴏ...**")
             dl = await replied.download()
             link = replied.link
             if len(m.command) < 2:
@@ -152,8 +152,8 @@ async def vplay(c: Client, m: Message):
                 await loser.delete()
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
-                    photo=f"https://telegra.ph/file/4498c051a00cb6e6e7aec.png",
-                    caption=f"💡 **Track added to queue »** `{pos}`\n\n🏷 **Name:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {requester}",
+                    photo=f"https://telegra.ph/file/e5294920be1da15d92dba.png",
+                    caption=f"💡 **ᴠɪᴅᴇᴏ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({link})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                     reply_markup=keyboard,
                 )
             else:
@@ -176,8 +176,8 @@ async def vplay(c: Client, m: Message):
                 await loser.delete()
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
-                    photo=f"https://telegra.ph/file/4498c051a00cb6e6e7aec.png",
-                    caption=f"💡 **Video streaming started.**\n\n🏷 **Name:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                    photo=f"https://telegra.ph/file/e5294920be1da15d92dba.png",
+                    caption=f"💡 **ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({link})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                     reply_markup=keyboard,
                 )
         else:
@@ -186,13 +186,13 @@ async def vplay(c: Client, m: Message):
                     "» reply to an **video file** or **give something to search.**"
                 )
             else:
-                loser = await m.reply("🔎 **searching...**")
+                loser = await m.reply("🔎 **Mempersoses, sᴀʙᴀʀ ɴᴀᴘᴀ ᴋɴᴛʟ...**")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 Q = 720
                 amaze = HighQualityVideo()
                 if search == 0:
-                    await loser.edit("❌ **no results found.**")
+                    await loser.edit("❌ **ɴᴏ ʀᴇsᴜʟᴛs ғᴏᴜɴᴅ.**")
                 else:
                     songname = search[0]
                     url = search[1]
@@ -207,8 +207,8 @@ async def vplay(c: Client, m: Message):
                             await loser.delete()
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
-                                photo=f"https://telegra.ph/file/4498c051a00cb6e6e7aec.png",
-                                caption=f"💡 **Track added to queue »** `{pos}`\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {requester}",
+                                photo=f"https://telegra.ph/file/e5294920be1da15d92dba.png",
+                                caption=f"💡 **ᴠɪᴅᴇᴏ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                                 reply_markup=keyboard,
                             )
                         else:
@@ -226,8 +226,8 @@ async def vplay(c: Client, m: Message):
                                 await loser.delete()
                                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                                 await m.reply_photo(
-                                    photo=f"https://telegra.ph/file/4498c051a00cb6e6e7aec.png",
-                                    caption=f"💡 **Video streaming started.**\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                                    photo=f"https://telegra.ph/file/e5294920be1da15d92dba.png",
+                                    caption=f"💡 **ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                                     reply_markup=keyboard,
                                 )
                             except Exception as ep:
@@ -240,13 +240,13 @@ async def vplay(c: Client, m: Message):
                 "» reply to an **video file** or **give something to search.**"
             )
         else:
-            loser = await m.reply("🔎 **searching...**")
+            loser = await m.reply("🔎 **ᴍᴇᴍᴘᴇʀsᴏsᴇs, sᴀʙᴀʀ ɴᴀᴘᴀ ᴋɴᴛʟ...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
             amaze = HighQualityVideo()
             if search == 0:
-                await loser.edit("❌ **no results found.**")
+                await loser.edit("❌ **ɴᴏ ʀᴇsᴜʟᴛs ғᴏᴜɴᴅ.**")
             else:
                 songname = search[0]
                 url = search[1]
@@ -261,8 +261,8 @@ async def vplay(c: Client, m: Message):
                             f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                         )
                         await m.reply_photo(
-                            photo=f"https://telegra.ph/file/4498c051a00cb6e6e7aec.png",
-                            caption=f"💡 **Track added to queue »** `{pos}`\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {requester}",
+                            photo=f"https://telegra.ph/file/e5294920be1da15d92dba.png",
+                            caption=f"💡 **ᴠɪᴅᴇᴏ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                             reply_markup=keyboard,
                         )
                     else:
@@ -280,8 +280,8 @@ async def vplay(c: Client, m: Message):
                             await loser.delete()
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
-                                photo=f"https://telegra.ph/file/4498c051a00cb6e6e7aec.png",
-                                caption=f"💡 **Video streaming started.**\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                                photo=f"https://telegra.ph/file/e5294920be1da15d92dba.png",
+                                caption=f"💡 **ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                                 reply_markup=keyboard,
                             )
                         except Exception as ep:
@@ -310,7 +310,7 @@ async def vstream(c: Client, m: Message):
     a = await c.get_chat_member(chat_id, aing.id)
     if a.status != "administrator":
         await m.reply_text(
-            f"💡 To use me, I need to be an **Administrator** with the following **permissions**:\n\n» ❌ __Delete messages__\n» ❌ __Restrict users__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
+            f"💡 ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ sᴀʏᴀ, sᴀʏᴀ ʜᴀʀᴜs ᴍᴇɴᴊᴀᴅɪ **ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ** ᴅᴇɴɢᴀɴ ʙᴇʀɪᴋᴜᴛ ɪɴɪ **ᴘᴇʀᴍɪssɪᴏɴs**:\n\n» ❌ __Delete messages__\n» ❌ __Restrict users__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
         )
         return
     if not a.can_manage_voice_chats:
@@ -334,7 +334,7 @@ async def vstream(c: Client, m: Message):
         b = await c.get_chat_member(chat_id, ubot.id)
         if b.status == "kicked":
             await m.reply_text(
-                f"@{ASSISTANT_NAME} **is banned in group** {m.chat.title}\n\n» **unban the userbot first if you want to use this bot.**"
+                f"@{ASSISTANT_NAME} **ᴅɪʙᴀɴ ᴅɪ ɢʀᴜᴘ ɪɴɪ ᴋɴᴛʟ** {m.chat.title}\n\n» **ᴜɴʙᴀɴ ᴜsᴇʀʙᴏᴛ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ ᴊɪᴋᴀ ɪɴɢɪɴ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ ɪɴɪ.**"
             )
             return
     except UserNotParticipant:
@@ -342,7 +342,7 @@ async def vstream(c: Client, m: Message):
             try:
                 await user.join_chat(m.chat.username)
             except Exception as e:
-                await m.reply_text(f"❌ **userbot failed to join**\n\n**reason**: `{e}`")
+                await m.reply_text(f"❌ **ᴜsᴇʀʙᴏᴛ ɢᴀɢᴀʟ ʙᴇʀɢᴀʙᴜɴɢ**\n\n**reason**: `{e}`")
                 return
         else:
             try:
@@ -353,7 +353,7 @@ async def vstream(c: Client, m: Message):
                 pass
             except Exception as e:
                 return await m.reply_text(
-                    f"❌ **userbot failed to join**\n\n**reason**: `{e}`"
+                    f"❌ **ᴜsᴇʀʙᴏᴛ ɢᴀɢᴀʟ ʙᴇʀɢᴀʙᴜɴɢ**\n\n**reason**: `{e}`"
                 )
 
     if len(m.command) < 2:
@@ -362,7 +362,7 @@ async def vstream(c: Client, m: Message):
         if len(m.command) == 2:
             link = m.text.split(None, 1)[1]
             Q = 720
-            loser = await m.reply("🔄 **processing stream...**")
+            loser = await m.reply("🔄 **ᴍᴇᴍᴘᴇʀsᴏsᴇs, sᴀʙᴀʀ ɴᴀᴘᴀ ᴋɴᴛʟ...**")
         elif len(m.command) == 3:
             op = m.text.split(None, 1)[1]
             link = op.split(None, 1)[0]
@@ -374,7 +374,7 @@ async def vstream(c: Client, m: Message):
                 await m.reply(
                     "» __only 720, 480, 360 allowed__ \n💡 **now streaming video in 720p**"
                 )
-            loser = await m.reply("🔄 **processing stream...**")
+            loser = await m.reply("🔄 **ᴍᴇᴍᴘᴇʀsᴏsᴇs, sᴀʙᴀʀ ɴᴀᴘᴀ ᴋɴᴛʟ...**")
         else:
             await m.reply("**/vstream {link} {720/480/360}**")
 
@@ -394,8 +394,8 @@ async def vstream(c: Client, m: Message):
                 await loser.delete()
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
-                    photo=f"https://telegra.ph/file/4498c051a00cb6e6e7aec.png",
-                    caption=f"💡 **Track added to queue »** `{pos}`\n\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {requester}",
+                    photo=f"https://telegra.ph/file/e5294920be1da15d92dba.png",
+                    caption=f"💡 **ᴠɪᴅᴇᴏ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                     reply_markup=keyboard,
                 )
             else:
@@ -421,8 +421,8 @@ async def vstream(c: Client, m: Message):
                         f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                     )
                     await m.reply_photo(
-                        photo=f"https://telegra.ph/file/4498c051a00cb6e6e7aec.png",
-                        caption=f"💡 **[Video live]({link}) stream started.**\n\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                        photo=f"https://telegra.ph/file/e5294920be1da15d92dba.png",
+                        caption=f"💡 **[ᴠɪᴅᴇᴏ ʟɪᴠᴇ]({link}) sᴛʀᴇᴀᴍ sᴛᴀʀᴛᴇᴅ.**\n\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                         reply_markup=keyboard,
                     )
                 except Exception as ep:
