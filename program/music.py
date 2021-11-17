@@ -71,7 +71,7 @@ async def play(c: Client, m: Message):
     a = await c.get_chat_member(chat_id, aing.id)
     if a.status != "administrator":
         await m.reply_text(
-            f"💡 To use me, I need to be an **Administrator** with the following **permissions**:\n\n» ❌ __Delete messages__\n» ❌ __Restrict users__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
+            f"💡 ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ sᴀʏᴀ, sᴀʏᴀ ʜᴀʀᴜs ᴍᴇɴᴊᴀᴅɪ **ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ** ᴅᴇɴɢᴀɴ ʙᴇʀɪᴋᴜᴛ ɪɴɪ **ᴘᴇʀᴍɪssɪᴏɴs**:\n\n» ❌ __Delete messages__\n» ❌ __Restrict users__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
         )
         return
     if not a.can_manage_voice_chats:
@@ -95,7 +95,7 @@ async def play(c: Client, m: Message):
         b = await c.get_chat_member(chat_id, ubot.id)
         if b.status == "kicked":
             await m.reply_text(
-                f"@{ASSISTANT_NAME} **is banned in group** {m.chat.title}\n\n» **unban the userbot first if you want to use this bot.**"
+                f"@{ASSISTANT_NAME} **ᴅɪʙᴀɴ ᴅɪ ɢʀᴜᴘ ɪɴɪ ᴋɴᴛʟ** {m.chat.title}\n\n» **ᴜɴʙᴀɴ ᴜsᴇʀʙᴏᴛ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ ᴊɪᴋᴀ ɪɴɢɪɴ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ ɪɴɪ.**"
             )
             return
     except UserNotParticipant:
@@ -103,7 +103,7 @@ async def play(c: Client, m: Message):
             try:
                 await user.join_chat(m.chat.username)
             except Exception as e:
-                await m.reply_text(f"❌ **userbot failed to join**\n\n**reason**: `{e}`")
+                await m.reply_text(f"❌ **ᴜsᴇʀʙᴏᴛ ɢᴀɢᴀʟ ʙᴇʀɢᴀʙᴜɴɢ**\n\n**reason**: `{e}`")
                 return
         else:
             try:
@@ -114,12 +114,12 @@ async def play(c: Client, m: Message):
                 pass
             except Exception as e:
                 return await m.reply_text(
-                    f"❌ **userbot failed to join**\n\n**reason**: `{e}`"
+                    f"❌ **ᴜsᴇʀʙᴏᴛ ɢᴀɢᴀʟ ʙᴇʀɢᴀʙᴜɴɢ**\n\n**reason**: `{e}`"
                 )
 
     if replied:
         if replied.audio or replied.voice:
-            suhu = await replied.reply("📥 **downloading audio...**")
+            suhu = await replied.reply("📥 **ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀᴜᴅɪᴏ...**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -136,8 +136,8 @@ async def play(c: Client, m: Message):
                 pos = add_to_queue(chat_id, songname, dl, link, "Audio", 0)
                 await suhu.delete()
                 await m.reply_photo(
-                    photo=f"https://telegra.ph/file/7cc4bfe6de07c0c6676cc.png",
-                    caption=f"💡 **Track added to queue »** `{pos}`\n\n🏷 **Name:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {m.from_user.mention()}",
+                    photo=f"https://telegra.ph/file/16b01ed4051929fc226ba.png",
+                    caption=f"💡 **ᴍᴜsɪᴄ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **Name:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {m.from_user.mention()}",
                     reply_markup=keyboard,
                 )
             else:
@@ -153,8 +153,8 @@ async def play(c: Client, m: Message):
                 await suhu.delete()
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
-                    photo=f"https://telegra.ph/file/7cc4bfe6de07c0c6676cc.png",
-                    caption=f"💡 **Music streaming started.**\n\n🏷 **Name:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                    photo=f"https://telegra.ph/file/16b01ed4051929fc226ba.png",
+                    caption=f"💡 **ᴍᴜsɪᴄ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({link})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                     reply_markup=keyboard,
                 )
              except Exception as e:
@@ -166,11 +166,11 @@ async def play(c: Client, m: Message):
                     "» reply to an **audio file** or **give something to search.**"
                 )
             else:
-                suhu = await m.reply("🔎 **searching...**")
+                suhu = await m.reply("🔎 **ᴍᴇᴍᴘᴇʀsᴏsᴇs, sᴀʙᴀʀ ɴᴀᴘᴀ ᴋɴᴛʟ...**")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 if search == 0:
-                    await suhu.edit("❌ **no results found.**")
+                    await suhu.edit("❌ **ɴᴏ ʀᴇsᴜʟᴛs ғᴏᴜɴᴅ.**")
                 else:
                     songname = search[0]
                     url = search[1]
@@ -185,8 +185,8 @@ async def play(c: Client, m: Message):
                             await suhu.delete()
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
-                                photo=f"https://telegra.ph/file/7cc4bfe6de07c0c6676cc.png",
-                                caption=f"💡 **Track added to queue »** `{pos}`\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {requester}",
+                                photo=f"https://telegra.ph/file/16b01ed4051929fc226ba.png",
+                                caption=f"💡 **ᴍᴜsɪᴄ ᴅɪ ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏᴇ:** {requester}",
                                 reply_markup=keyboard,
                             )
                         else:
@@ -202,8 +202,8 @@ async def play(c: Client, m: Message):
                                 await suhu.delete()
                                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                                 await m.reply_photo(
-                                    photo=f"https://telegra.ph/file/7cc4bfe6de07c0c6676cc.png",
-                                    caption=f"💡 **Music streaming started.**\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                                    photo=f"https://telegra.ph/file/16b01ed4051929fc226ba.png",
+                                    caption=f"💡 **ᴍᴜsɪᴄ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
                                     reply_markup=keyboard,
                                 )
                             except Exception as ep:
@@ -216,11 +216,11 @@ async def play(c: Client, m: Message):
                 "» reply to an **audio file** or **give something to search.**"
             )
         else:
-            suhu = await m.reply("🔎 **searching...**")
+            suhu = await m.reply("🔎 **ᴍᴇᴍᴘᴇʀsᴏsᴇs, sᴀʙᴀʀ ɴᴀᴘᴀ ᴋɴᴛʟ...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
-                await suhu.edit("❌ **no results found.**")
+                await suhu.edit("❌ **ɴᴏ ʀᴇsᴜʟᴛs ғᴏᴜɴᴅ.**")
             else:
                 songname = search[0]
                 url = search[1]
@@ -235,8 +235,8 @@ async def play(c: Client, m: Message):
                             f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                         )
                         await m.reply_photo(
-                            photo=f"https://telegra.ph/file/7cc4bfe6de07c0c6676cc.png",
-                            caption=f"💡 **Track added to queue »** `{pos}`\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {requester}",
+                            photo=f"https://telegra.ph/file/16b01ed4051929fc226ba.png",
+                            caption=f"💡 **ᴍᴜsɪᴄ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                             reply_markup=keyboard,
                         )
                     else:
@@ -252,8 +252,8 @@ async def play(c: Client, m: Message):
                             await suhu.delete()
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
-                                photo=f"{IMG_2}",
-                                caption=f"💡 **Music streaming started.**\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                                photo=f"https://telegra.ph/file/16b01ed4051929fc226ba.png",
+                                caption=f"💡 **ᴍᴜsɪᴄ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                                 reply_markup=keyboard,
                             )
                         except Exception as ep:
@@ -284,7 +284,7 @@ async def stream(c: Client, m: Message):
     a = await c.get_chat_member(chat_id, aing.id)
     if a.status != "administrator":
         await m.reply_text(
-            f"💡 To use me, I need to be an **Administrator** with the following **permissions**:\n\n» ❌ __Delete messages__\n» ❌ __Restrict users__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
+            f"💡 ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ sᴀʏᴀ, sᴀʏᴀ ʜᴀʀᴜs ᴍᴇɴᴊᴀᴅɪ **ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ** ᴅᴇɴɢᴀɴ ʙᴇʀɪᴋᴜᴛ ɪɴɪ **ᴘᴇʀᴍɪssɪᴏɴs**:\n\n» ❌ __Delete messages__\n» ❌ __Restrict users__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
         )
         return
     if not a.can_manage_voice_chats:
@@ -308,7 +308,7 @@ async def stream(c: Client, m: Message):
         b = await c.get_chat_member(chat_id, ubot.id)
         if b.status == "kicked":
             await m.reply_text(
-                f"@{ASSISTANT_NAME} **is banned in group** {m.chat.title}\n\n» **unban the userbot first if you want to use this bot.**"
+                f"@{ASSISTANT_NAME} **ᴅɪʙᴀɴ ᴅɪ ɢʀᴜᴘ ɪɴɪ ᴋɴᴛʟ** {m.chat.title}\n\n» **ᴜɴʙᴀɴ ᴜsᴇʀʙᴏᴛ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ ᴊɪᴋᴀ ɪɴɢɪɴ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ ɪɴɪ.**"
             )
             return
     except UserNotParticipant:
@@ -316,7 +316,7 @@ async def stream(c: Client, m: Message):
             try:
                 await user.join_chat(m.chat.username)
             except Exception as e:
-                await m.reply_text(f"❌ **userbot failed to join**\n\n**reason**: `{e}`")
+                await m.reply_text(f"❌ **ᴜsᴇʀʙᴏᴛ ɢᴀɢᴀʟ ʙᴇʀɢᴀʙᴜɴɢ**\n\n**reason**: `{e}`")
                 return
         else:
             try:
@@ -327,14 +327,14 @@ async def stream(c: Client, m: Message):
                 pass
             except Exception as e:
                 return await m.reply_text(
-                    f"❌ **userbot failed to join**\n\n**reason**: `{e}`"
+                    f"❌ **ᴜsᴇʀʙᴏᴛ ɢᴀɢᴀʟ ʙᴇʀɢᴀʙᴜɴɢ**\n\n**reason**: `{e}`"
                 )
 
     if len(m.command) < 2:
         await m.reply("» give me a live-link/m3u8 url/youtube link to stream.")
     else:
         link = m.text.split(None, 1)[1]
-        suhu = await m.reply("🔄 **processing stream...**")
+        suhu = await m.reply("🔄 **ᴘʀᴏᴄᴇssɪɴɢ ᴍᴜsɪᴄ...**")
 
         regex = r"^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+"
         match = re.match(regex, link)
@@ -353,7 +353,7 @@ async def stream(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"https://telegra.ph/file/7cc4bfe6de07c0c6676cc.png",
-                    caption=f"💡 **Track added to queue »** `{pos}`\n\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {requester}",
+                    caption=f"💡 **ᴍᴜsɪᴄ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                     reply_markup=keyboard,
                 )
             else:
@@ -371,7 +371,7 @@ async def stream(c: Client, m: Message):
                         f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                     )
                     await m.reply_photo(
-                        photo=f"https://telegra.ph/file/7cc4bfe6de07c0c6676cc.png",
+                        photo=f"https://telegra.ph/file/16b01ed4051929fc226ba.png",
                         caption=f"💡 **[Music live]({link}) stream started.**\n\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
                         reply_markup=keyboard,
                     )
