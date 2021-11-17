@@ -53,7 +53,7 @@ Client.on_message(
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""✨ **ʜᴀʟʟᴏ [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
-💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) sᴀʏᴀ ʙᴏᴛ ᴍᴜsɪᴄ ɢʀᴏᴜᴘ, ʏᴀɴɢ ʙɪsᴀ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢᴜ ᴅᴇɴɢᴀɴ ᴄᴇᴘᴀᴛ ᴅɪ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ɢʀᴏᴜᴘ ᴅᴇɴɢᴀɴ ᴄᴀʀᴀ ʏᴀɴɢ ᴍᴜᴅᴀʜ
+💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) **sᴀʏᴀ ʙᴏᴛ ᴍᴜsɪᴄ ɢʀᴏᴜᴘ, ʏᴀɴɢ ʙɪsᴀ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢᴜ ᴅᴇɴɢᴀɴ ᴄᴇᴘᴀᴛ ᴅɪ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ɢʀᴏᴜᴘ ᴅᴇɴɢᴀɴ ᴄᴀʀᴀ ʏᴀɴɢ ᴍᴜᴅᴀʜ
 sᴀʏᴀ ᴍᴇᴍɪʟɪᴋɪ ʙᴀɴʏᴀᴋ ғɪᴛᴜʀ ᴘʀᴀᴋᴛɪs sᴇᴘᴇʀᴛɪ :
 ┏━━━━━━━━━━━━━━
 ┣• ᴍᴇᴍᴜᴛᴀʀ ᴍᴜsɪᴋ.
