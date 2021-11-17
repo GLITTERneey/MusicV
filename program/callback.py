@@ -15,18 +15,18 @@ from config import (
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""✨ **𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐢𝐧 [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
-💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) 𝐒𝐚𝐲𝐚 𝐁𝐨𝐭 𝐌𝐮𝐬𝐢𝐜 𝐆𝐫𝐨𝐮𝐩, 𝐘𝐚𝐧𝐠 𝐁𝐢𝐬𝐚 𝐌𝐞𝐦𝐮𝐭𝐚𝐫 𝐋𝐚𝐠𝐮 𝐃𝐞𝐧𝐠𝐚𝐧 𝐂𝐞𝐩𝐚𝐭 𝐝𝐢 𝐕𝐨𝐢𝐜𝐞 𝐂𝐡𝐚𝐭 𝐆𝐫𝐨𝐮𝐩 𝐃𝐞𝐧𝐠𝐚𝐧 𝐂𝐚𝐫𝐚 𝐘𝐚𝐧𝐠 𝐌𝐮𝐝𝐚𝐡
-𝐒𝐚𝐲𝐚 𝐌𝐞𝐦𝐢𝐥𝐢𝐤𝐢 𝐁𝐚𝐧𝐲𝐚𝐤 𝐅𝐢𝐭𝐮𝐫 𝐏𝐫𝐚𝐤𝐭𝐢𝐬 𝐒𝐞𝐩𝐞𝐫𝐭𝐢 :
+        f"""✨ **ʜᴀʟʟᴏ [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
+💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) sᴀʏᴀ ʙᴏᴛ ᴍᴜsɪᴄ-ᴠɪᴅᴇᴏ ɢʀᴏᴜᴘ, ʏᴀɴɢ ʙɪsᴀ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢᴜ ᴅᴇɴɢᴀɴ ᴄᴇᴘᴀᴛ ᴅɪ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ɢʀᴏᴜᴘ ᴅᴇɴɢᴀɴ ᴄᴀʀᴀ ʏᴀɴɢ ᴍᴜᴅᴀʜ sᴀʏᴀ ᴍᴇᴍɪʟɪᴋɪ ʙᴀɴʏᴀᴋ ғɪᴛᴜʀ ᴘʀᴀᴋᴛɪsɪ sᴇᴘᴇʀᴛɪ :
 ┏━━━━━━━━━━━━━━
-┣• 𝐌𝐞𝐦𝐮𝐭𝐚𝐫 𝐌𝐮𝐬𝐢𝐤.
-┣• 𝐌𝐞𝐧𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐋𝐚𝐠𝐮.
-┣• 𝐌𝐞𝐥𝐢𝐡𝐚𝐭 𝐋𝐢𝐫𝐢𝐤 𝐋𝐚𝐠𝐮.
-┣• 𝐌𝐞𝐦𝐢𝐥𝐢𝐤𝐢 𝐁𝐚𝐧𝐲𝐚𝐤 𝐌𝐨𝐝𝐮𝐥 𝐌𝐞𝐧𝐚𝐫𝐢𝐤.
-┣• 𝐌𝐞𝐧𝐜𝐚𝐫𝐢 𝐋𝐚𝐠𝐮 𝐘𝐚𝐧𝐠 𝐢𝐧𝐠𝐢𝐧 𝐝𝐢 𝐏𝐮𝐭𝐚𝐫 𝐚𝐭𝐚𝐮 𝐝𝐢 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝.
-┣• 𝐆𝐮𝐧𝐚𝐤𝐚𝐧 𝐏𝐞𝐫𝐢𝐧𝐭𝐚𝐡 » /help « 𝐮𝐧𝐭𝐮𝐤 𝐌𝐞𝐧𝐠𝐞𝐭𝐚𝐡𝐮𝐢 𝐅𝐢𝐭𝐮𝐫 𝐋𝐞𝐧𝐠𝐤𝐚𝐩 𝐒𝐚𝐲𝐚
+┣• ᴍᴇᴍᴜᴛᴀʀ ᴍᴜsɪᴄ.
+┣• ᴍᴇᴍᴜᴛᴀʀ sᴛʀᴇᴀᴍɪɴɢ.
+┣• ᴍᴇᴍɪʟɪᴋɪ ʙᴀɴʏᴀᴋ ᴍᴏᴅᴜʟᴇ ᴍᴇɴᴀʀɪᴋ.
+┣• ᴊᴀɴɢᴀɴ ᴅɪ ᴘᴀᴋᴇ ʙᴜᴀᴛ ɴᴏɴᴛᴏɴ ʙᴏᴋᴇᴘ ʏᴀ ᴋɴᴛʟ ᴀᴊɢ ʙᴀʙɪ. 
+┣• ᴍᴇɴᴄᴀʀɪ ʟᴀɢᴜ ᴀᴛᴀᴜ ᴠɪᴅᴇᴏ ʏᴀɴɢ ɪɴɢɪɴ ᴅɪ ᴘᴜᴛᴀʀ ᴀᴛᴀᴜ ᴅɪ ᴅᴏᴡɴʟᴏᴀᴅ.
+┣• ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ » /commands « ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ғɪᴛᴜʀ ʟᴇɴɢᴋᴀᴘ ʙᴏᴛ sᴀʏᴀ
 ┗━━━━━━━━━━━━━━ 
-✨ 𝐓𝐞𝐫𝐢𝐦𝐚𝐊𝐚𝐬𝐢𝐡 𝐓𝐞𝐥𝐚𝐡 𝐌𝐞𝐧𝐠𝐠𝐮𝐧𝐚𝐤𝐚𝐧 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐈𝐧𝐢! [𝐆𝐋𝐈𝐓𝐓𝐄𝐑](https://t.me/Biarenakliatnyaaaa) X [𝐋𝐄𝐕𝐈𝐍𝐀](https://t.me/dlwrml)!**
+✨ 𝐓𝐞𝐫𝐢𝐦𝐚𝐊𝐚𝐬𝐢𝐡 𝐓𝐞𝐥𝐚𝐡 𝐌𝐞𝐧𝐠𝐠𝐮𝐧𝐚𝐤𝐚𝐧 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐈𝐧𝐢! [ɢʟɪᴛᴛᴇʀ](https://t.me/Biarenakliatnyaaaa)**
+💡 ᴛʜᴀɴᴋs ʙʏᴇ [ɢʟɪᴛᴛᴇʀ](https://t.me/Biarenakliatnyaaaa) X [ʟᴇᴠɪɴᴀ](https://t.me/dlwrml)**
 """,
         reply_markup=InlineKeyboardMarkup( 
             [
