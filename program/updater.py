@@ -1,7 +1,7 @@
 import os
 import sys
 
-from git import Repo
+
 from pyrogram.types import Message
 from driver.filters import command
 from pyrogram import Client, filters
