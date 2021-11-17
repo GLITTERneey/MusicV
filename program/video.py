@@ -77,7 +77,7 @@ async def vplay(c: Client, m: Message):
     a = await c.get_chat_member(chat_id, aing.id)
     if a.status != "administrator":
         await m.reply_text(
-            f"💡 ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ sᴀʏᴀ, sᴀʏᴀ ʜᴀʀᴜs ᴍᴇɴᴊᴀᴅɪ **ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ** ᴅᴇɴɢᴀɴ ʙᴇʀɪᴋᴜᴛ ɪɴɪ **ᴘᴇʀᴍɪssɪᴏɴs**:\n\n» ❌ __Delete messages__\n» ❌ __Restrict users__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
+            f" ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ sᴀʏᴀ, sᴀʏᴀ ʜᴀʀᴜs ᴍᴇɴᴊᴀᴅɪ **ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ** ᴅᴇɴɢᴀɴ ʙᴇʀɪᴋᴜᴛ ɪɴɪ **ᴘᴇʀᴍɪssɪᴏɴs**:\n\n» ❌ __Delete messages__\n» ❌ __Restrict users__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
         )
         return
     if not a.can_manage_voice_chats:
@@ -153,7 +153,7 @@ async def vplay(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"https://telegra.ph/file/e5294920be1da15d92dba.png",
-                    caption=f"💡 **ᴠɪᴅᴇᴏ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({link})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
+                    caption=f" **ᴠɪᴅᴇᴏ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({link})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                     reply_markup=keyboard,
                 )
             else:
@@ -177,7 +177,7 @@ async def vplay(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"https://telegra.ph/file/e5294920be1da15d92dba.png",
-                    caption=f"💡 **ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({link})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
+                    caption=f" **ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({link})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                     reply_markup=keyboard,
                 )
         else:
@@ -186,7 +186,7 @@ async def vplay(c: Client, m: Message):
                     "» reply to an **video file** or **give something to search.**"
                 )
             else:
-                loser = await m.reply("🔎 **Mempersoses, sᴀʙᴀʀ ɴᴀᴘᴀ ᴋɴᴛʟ...**")
+                loser = await m.reply("🔁 **ᴍᴇᴍᴘᴇʀsᴏsᴇs, sᴀʙᴀʀ ɴᴀᴘᴀ ᴋɴᴛʟ...**")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 Q = 720
@@ -208,7 +208,7 @@ async def vplay(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=f"https://telegra.ph/file/e5294920be1da15d92dba.png",
-                                caption=f"💡 **ᴠɪᴅᴇᴏ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
+                                caption=f" **ᴠɪᴅᴇᴏ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                                 reply_markup=keyboard,
                             )
                         else:
@@ -227,7 +227,7 @@ async def vplay(c: Client, m: Message):
                                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                                 await m.reply_photo(
                                     photo=f"https://telegra.ph/file/e5294920be1da15d92dba.png",
-                                    caption=f"💡 **ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
+                                    caption=f" **ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                                     reply_markup=keyboard,
                                 )
                             except Exception as ep:
@@ -240,7 +240,7 @@ async def vplay(c: Client, m: Message):
                 "» reply to an **video file** or **give something to search.**"
             )
         else:
-            loser = await m.reply("🔎 **ᴍᴇᴍᴘᴇʀsᴏsᴇs, sᴀʙᴀʀ ɴᴀᴘᴀ ᴋɴᴛʟ...**")
+            loser = await m.reply("🔁 **ᴍᴇᴍᴘᴇʀsᴏsᴇs, sᴀʙᴀʀ ɴᴀᴘᴀ ᴋɴᴛʟ...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
@@ -262,7 +262,7 @@ async def vplay(c: Client, m: Message):
                         )
                         await m.reply_photo(
                             photo=f"https://telegra.ph/file/e5294920be1da15d92dba.png",
-                            caption=f"💡 **ᴠɪᴅᴇᴏ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
+                            caption=f" **ᴠɪᴅᴇᴏ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                             reply_markup=keyboard,
                         )
                     else:
@@ -281,7 +281,7 @@ async def vplay(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=f"https://telegra.ph/file/e5294920be1da15d92dba.png",
-                                caption=f"💡 **ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
+                                caption=f" **ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍɪɴɢ sᴛᴀʀᴛᴇᴅ.**\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                                 reply_markup=keyboard,
                             )
                         except Exception as ep:
@@ -310,7 +310,7 @@ async def vstream(c: Client, m: Message):
     a = await c.get_chat_member(chat_id, aing.id)
     if a.status != "administrator":
         await m.reply_text(
-            f"💡 ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ sᴀʏᴀ, sᴀʏᴀ ʜᴀʀᴜs ᴍᴇɴᴊᴀᴅɪ **ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ** ᴅᴇɴɢᴀɴ ʙᴇʀɪᴋᴜᴛ ɪɴɪ **ᴘᴇʀᴍɪssɪᴏɴs**:\n\n» ❌ __Delete messages__\n» ❌ __Restrict users__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
+            f" ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ sᴀʏᴀ, sᴀʏᴀ ʜᴀʀᴜs ᴍᴇɴᴊᴀᴅɪ **ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ** ᴅᴇɴɢᴀɴ ʙᴇʀɪᴋᴜᴛ ɪɴɪ **ᴘᴇʀᴍɪssɪᴏɴs**:\n\n» ❌ __Delete messages__\n» ❌ __Restrict users__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
         )
         return
     if not a.can_manage_voice_chats:
@@ -395,7 +395,7 @@ async def vstream(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"https://telegra.ph/file/e5294920be1da15d92dba.png",
-                    caption=f"💡 **ᴠɪᴅᴇᴏ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
+                    caption=f" **ᴠɪᴅᴇᴏ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴀɴᴛʀɪᴀɴ »** `{pos}`\n\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                     reply_markup=keyboard,
                 )
             else:
@@ -422,7 +422,7 @@ async def vstream(c: Client, m: Message):
                     )
                     await m.reply_photo(
                         photo=f"https://telegra.ph/file/e5294920be1da15d92dba.png",
-                        caption=f"💡 **[ᴠɪᴅᴇᴏ ʟɪᴠᴇ]({link}) sᴛʀᴇᴀᴍ sᴛᴀʀᴛᴇᴅ.**\n\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
+                        caption=f" **[ᴠɪᴅᴇᴏ ʟɪᴠᴇ]({link}) sᴛʀᴇᴀᴍ sᴛᴀʀᴛᴇᴅ.**\n\n💭 **ᴄʜᴀᴛ:** `{chat_id}`\n💡 **sᴛᴀᴛᴜs:** `Playing`\n🎧 **ʀᴇǫᴜᴇsᴛ ʙʏᴇ:** {requester}",
                         reply_markup=keyboard,
                     )
                 except Exception as ep:
