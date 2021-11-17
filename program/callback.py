@@ -28,30 +28,30 @@ async def cbstart(_, query: CallbackQuery):
 ┗━━━━━━━━━━━━━━ 
 ✨ 𝐓𝐞𝐫𝐢𝐦𝐚𝐊𝐚𝐬𝐢𝐡 𝐓𝐞𝐥𝐚𝐡 𝐌𝐞𝐧𝐠𝐠𝐮𝐧𝐚𝐤𝐚𝐧 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐈𝐧𝐢! [𝐆𝐋𝐈𝐓𝐓𝐄𝐑](https://t.me/{OWNER_NAME})!**
 """,
-        reply_markup=InlineKeyboardMarkup(
+        reply_markup=InlineKeyboardMarkup( 
             [
                 [
                     InlineKeyboardButton(
-                        "➕ тαмвαнкαη ѕαуα кє gяσυρ αη∂α ➕",
+                        "➕ 𝐓𝐚𝐦𝐛𝐚𝐡𝐤𝐚𝐧 𝐆𝐮𝐚 𝐊𝐞 𝐆𝐫𝐨𝐮𝐩 𝐋𝐮 𝐊𝐧𝐭𝐥 🙋‍♂️",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-                    )
+                    ) 
                 ],
-                [InlineKeyboardButton("❓ вαѕι¢ gυι∂є", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("𝐁𝐚𝐬𝐢𝐜 𝐆𝐮𝐢𝐥𝐝𝐞", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 ¢σммαη∂ѕ", callback_data="cbcmds"),
-                    InlineKeyboardButton(" ∂σηαтυя 🌻", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬", callback_data="cbcmds"),
+                    InlineKeyboardButton("𝐃𝐨𝐧𝐚𝐭𝐮𝐫", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
-                    InlineKeyboardButton(
-                        "✨σƒƒι¢ιαℓ gяσυρ✨", url=f"https://t.me/{GROUP_SUPPORT}"
+                    InlineKeyboardButton( 
+                        "𝐆𝐫𝐨𝐮𝐩𝐬", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "🌻σƒƒι¢ιαℓ ¢нαηηєℓ🌻", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
-                    InlineKeyboardButton(
-                        "🤖 ѕσя¢є ¢σ∂є 🤖", url="https://t.me/Biarenakliatnyaaa"
+                    InlineKeyboardButton( 
+                        "𝐒𝐨𝐫𝐜𝐞 𝐂𝐨𝐝𝐞", url="https://t.me/Biarenakliatnyaaa"
                     )
                 ],
             ]
@@ -78,7 +78,7 @@ async def cbguides(_, query: CallbackQuery):
 
 ⚡ __𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲𝐞 {BOT_NAME} 𝐀𝐈__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")]]
+            [[InlineKeyboardButton("🔙 𝐆𝐨 𝐁𝐚𝐜𝐤", callback_data="cbstart")]]
         ),
     )
 
@@ -91,15 +91,15 @@ async def cbcmds(_, query: CallbackQuery):
 » **𝐭𝐞𝐤𝐚𝐧 𝐭𝐨𝐦𝐛𝐨𝐥 𝐝𝐢 𝐛𝐚𝐰𝐚𝐡 𝐮𝐧𝐭𝐮𝐤 𝐦𝐞𝐦𝐛𝐚𝐜𝐚 𝐩𝐞𝐧𝐣𝐞𝐥𝐚𝐬𝐚𝐧 𝐝𝐚𝐧 𝐦𝐞𝐥𝐢𝐡𝐚𝐭 𝐝𝐚𝐟𝐭𝐚𝐫 𝐩𝐞𝐫𝐢𝐧𝐭𝐚𝐡 𝐲𝐚𝐧𝐠 𝐭𝐞𝐫𝐬𝐞𝐝𝐢𝐚 !**
 
 ⚡ __𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲𝐞 {BOT_NAME} 𝐀𝐈__""",
-        reply_markup=InlineKeyboardMarkup(
+        reply_markup=InlineKeyboardMarkup( 
             [
                 [
-                    InlineKeyboardButton("👷🏻 α∂мιη ¢м∂", callback_data="cbadmin"),
-                    InlineKeyboardButton("🧙🏻 ѕυ∂σ ¢м∂", callback_data="cbsudo"),
+                    InlineKeyboardButton("👷🏻 𝐀𝐝𝐦𝐢𝐧 𝐂𝐦𝐝", callback_data="cbadmin"),
+                    InlineKeyboardButton("🧙🏻 𝐒𝐮𝐝𝐨 𝐂𝐦𝐝", callback_data="cbsudo"),
                 ],[
-                    InlineKeyboardButton("📚 вαѕι¢ ¢м∂", callback_data="cbbasic")
+                    InlineKeyboardButton("📚 𝐁𝐚𝐬𝐢𝐜 𝐂𝐦𝐝", callback_data="cbbasic")
                 ],[
-                    InlineKeyboardButton("🔙 gσ вα¢к", callback_data="cbstart")
+                    InlineKeyboardButton("🔙 𝐆𝐨 𝐁𝐚𝐜𝐤", callback_data="cbstart")
                 ],
             ]
         ),
@@ -127,7 +127,7 @@ async def cbbasic(_, query: CallbackQuery):
 
 ⚡️ __𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲𝐞 {BOT_NAME} αι__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 𝐆𝐨 𝐁𝐚𝐜𝐤", callback_data="cbcmds")]]
         ),
     )
 
@@ -135,7 +135,7 @@ async def cbbasic(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadmin"))
 async def cbadmin(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 нєяє ιѕ тнє α∂мιη ¢σммαη∂ѕ:
+        f"""🏮 𝐇𝐞𝐫𝐞 𝐈𝐬 𝐓𝐡𝐞 𝐀𝐝𝐦𝐢𝐧 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬: 
 
 jeda - 𝐣𝐞𝐝𝐚 𝐬𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠
 » /resume - 𝐥𝐚𝐧𝐣𝐮𝐭𝐤𝐚𝐧 𝐬𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠
@@ -148,9 +148,9 @@ jeda - 𝐣𝐞𝐝𝐚 𝐬𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠
 » /userbotjoin - 𝐮𝐧𝐝𝐚𝐧𝐠 𝐮𝐬𝐞𝐫𝐛𝐨𝐭 𝐮𝐧𝐭𝐮𝐤 𝐛𝐞𝐫𝐠𝐚𝐛𝐮𝐧𝐠 𝐝𝐞𝐧𝐠𝐚𝐧 𝐠𝐫𝐮𝐩
 » /userbotleave - 𝐩𝐞𝐫𝐢𝐧𝐭𝐚𝐡𝐤𝐚𝐧 𝐮𝐬𝐞𝐫𝐛𝐨𝐭 𝐤𝐞𝐥𝐮𝐚𝐫 𝐝𝐚𝐫𝐢 𝐠𝐫𝐮𝐩
 
-⚡️ __𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲𝐞 {BOT_NAME} 𝐀𝐈__""",
+⚡️ __𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲𝐞 {BOT_NAME} 𝐀𝐈__""", 
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 𝐆𝐨 𝐁𝐚𝐜𝐤", callback_data="cbcmds")]]
         ),
     )
 
