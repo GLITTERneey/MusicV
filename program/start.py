@@ -52,7 +52,7 @@ async def _human_time_duration(seconds):
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""✨ **𝐖𝐞𝐥𝐜𝐨𝐦𝐞𝐢𝐧 {message.from_user.mention()} !**\n
+        f"""✨ **ʜᴀʟʟᴏ {message.from_user.mention()} !**\n
 💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **
 # Copyright (C) 2021 By VeezMusicProject
 
