@@ -26,32 +26,32 @@ async def cbstart(_, query: CallbackQuery):
 ┣• ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ » /commands « ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ғɪᴛᴜʀ ʟᴇɴɢᴋᴀᴘ ʙᴏᴛ sᴀʏᴀ
 ┗━━━━━━━━━━━━━━ 
 ✨ 𝐓𝐞𝐫𝐢𝐦𝐚𝐊𝐚𝐬𝐢𝐡 𝐓𝐞𝐥𝐚𝐡 𝐌𝐞𝐧𝐠𝐠𝐮𝐧𝐚𝐤𝐚𝐧 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐈𝐧𝐢! [ɢʟɪᴛᴛᴇʀ](https://t.me/Biarenakliatnyaaaa)**
-💡 ᴛʜᴀɴᴋs ʙʏᴇ [ɢʟɪᴛᴛᴇʀ](https://t.me/Biarenakliatnyaaaa) X [ʟᴇᴠɪɴᴀ](https://t.me/dlwrml)**
+💡 ᴛʜᴀɴᴋs ʙʏᴇ [ɢʟɪᴛᴛᴇʀ](https://t.me/Biarenakliatnyaaaa) x [ʟᴇᴠɪɴᴀ](https://t.me/dlwrml)**
 """,
         reply_markup=InlineKeyboardMarkup( 
             [
                 [
                     InlineKeyboardButton(
-                        "➕ 𝐓𝐚𝐦𝐛𝐚𝐡𝐤𝐚𝐧 𝐆𝐮𝐚 𝐊𝐞 𝐆𝐫𝐨𝐮𝐩 𝐋𝐮 𝐊𝐧𝐭𝐥 🙋‍♂️",
+                        "➕ ᴛᴀᴍʙᴀʜᴋᴀɴ ɢᴜᴀ ᴋᴇ ɢʀᴏᴜᴘ ʟᴜ ᴋɴᴛʟ 🙋‍♂️",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     ) 
                 ],
-                [InlineKeyboardButton("𝐁𝐚𝐬𝐢𝐜 𝐆𝐮𝐢𝐥𝐝𝐞", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("ʙᴀsɪᴄ ɢᴜɪʟᴅᴇ", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬", callback_data="cbcmds"),
-                    InlineKeyboardButton("𝐃𝐨𝐧𝐚𝐭𝐮𝐫", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅs, callback_data="cbcmds"),
+                    InlineKeyboardButton("ᴅᴏɴᴀᴛᴜʀ", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton( 
-                        "𝐆𝐫𝐨𝐮𝐩𝐬", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton( 
-                        "𝐒𝐨𝐫𝐜𝐞 𝐂𝐨𝐝𝐞", url="https://t.me/Biarenakliatnyaaa"
+                        "ɢʀᴏᴜᴘ ᴋᴇ-𝟸", url="https://t.me/Biarenakliatnyaaa"
                     )
                 ],
             ]
