@@ -90,7 +90,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://t.me/Virtualllnihsad"
+                        "sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://t.me/TurboGroupSupport"
                     )
                 ],
             ]
